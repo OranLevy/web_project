@@ -10,7 +10,7 @@ body{
 
 .nav-bar{
     display: grid;
-    grid-template-columns: 12% 12% 12% 12% 12% 12% 12%;
+    grid-template-columns: 20% 12% 12% 12% 12% 12% 12%;
     text-align: center;
     width: 60%;
     line-height: 68px;
@@ -27,18 +27,21 @@ body{
 }
 
 #logo{
-	width: 0;
-	height: 0;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-top: 50px solid #555;
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-top: 140px solid #D9D9D9;
+    /* position: absolute; */
+    /* margin-right: 26px; */
+    margin: auto;
 }
 
 .img-logo{
-    background-image: url('img/logo-cocktail.png');
+    background-image: url(img/logo-cocktail.png);
     position: absolute;
     width: 70px;
     height: 70px;
-    left: 1285px;
+    left: 1324px;
     top: -1px;
 }
