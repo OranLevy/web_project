@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+}
+
+.header{
+    background-color: #414141;
+    height: 68px;
+    width: 100%;
+}
+
+.nav-bar{
+    display: grid;
+    grid-template-columns: 12% 12% 12% 12% 12% 12% 12%;
+    text-align: center;
+    width: 60%;
+    line-height: 68px;
+}
+
+.menu-item{
+    color: white;
+    text-decoration: none;
+}
+
+.hero-image img{
+    width: 100%;
+    
+}
+
+#logo{
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid #555;
+}
+
+.img-logo{
+    background-image: url('img/logo-cocktail.png');
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 1285px;
+    top: -1px;
+}
