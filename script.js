@@ -4,5 +4,4 @@ function openHamburger(){
     }else{
         $('.hamburger-menu').hide();
     }
-    
 }
