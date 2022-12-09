@@ -1,32 +1,49 @@
-body{
+body {
     margin: 0;
 }
 
-.header{
+.header {
     background-color: #414141;
     height: 68px;
     width: 100%;
+    position: fixed;
+    top: 0px;
 }
 
-.nav-bar{
+.footer {
+    background-color: #414141;
+    height: 68px;
+    width: 100%;
+    bottom: 0px;
+}
+
+.nav-bar-header {
     display: grid;
-    grid-template-columns: 20% 12% 12% 12% 12% 12% 12%;
+    grid-template-columns: 20% 16% 16% 16% 16% 16%;
     text-align: center;
-    width: 60%;
+    width: 100%;
     line-height: 68px;
 }
 
-.menu-item{
+.nav-bar-footer {
+    display: grid;
+    text-align: center;
+    width: 100%;
+    line-height: 68px;
+}
+
+.menu-item {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
-.hero-image img{
+.hero-image img {
     width: 100%;
-    
+    margin-bottom: 20px;
 }
 
-#logo{
+#logo {
     width: 0;
     height: 0;
     border-left: 80px solid transparent;
@@ -37,11 +54,44 @@ body{
     margin: auto;
 }
 
-.img-logo{
+.img-logo {
     background-image: url(img/logo-cocktail.png);
     position: absolute;
     width: 70px;
     height: 70px;
     left: 1324px;
     top: -1px;
+}
+
+.space {
+    width: 2%;
+}
+
+.line {
+    width: 41%;
+}
+
+.title {
+    width: 14%;
+    text-align: center;
+    font-size: 22Px;
+    font-weight: bold;
+}
+
+.content {
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 26px;
+
+}
+
+.clear-left {
+    clear: left;
+}
+
+.float-left {
+    float: left;
 }
