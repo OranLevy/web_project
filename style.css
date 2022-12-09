@@ -42,8 +42,6 @@ body {
         margin-left: 20px;
         margin-top: 10px;
     }
-
-=======
 }
 
 .footer {
@@ -70,7 +68,7 @@ body {
     width: 100%;
     height: auto;
     z-index: -1;
-    position: absolute;
+    /* position: absolute; */
     left: 0px;
     right: 0px;
 }
