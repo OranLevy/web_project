@@ -49,6 +49,7 @@ body {
 
     .alcohol-cards-hp{
         flex-direction: column;
+        height: 1500px !important;
     }
 
     .text-intro-hp {
@@ -178,7 +179,7 @@ body {
       transform: skew(0deg, 13deg);
       font-size: 0px;
       margin: 30px 0px 0px 0px;
-      background: #c8c2c2;
+      background: #84a9b2;
       height: 250px;
       width: 200px;
   }
@@ -204,6 +205,8 @@ body {
     justify-content: center;
     gap: 100px;
     align-items: center;
+    background: #edebeb;
+    height: 500px;
   }
 
   .text-intro-hp {
