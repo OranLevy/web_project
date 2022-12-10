@@ -121,12 +121,10 @@ body {
 }
 
 .content {
-    margin-top: 20px;
-    margin-left: 20%;
-    margin-right: 20%;
     margin-bottom: 40px;
     text-align: center;
-    font-size: 26px;
+    font-size: 20px;
+    padding: 35px;
 
 }
 
@@ -157,7 +155,7 @@ body {
   }
   
   .a-box:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 
   .img-container {
