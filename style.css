@@ -153,8 +153,13 @@ body {
     display: inline-block;
     width: 240px;
     text-align: center;
+    transition: transform .2s;
   }
   
+  .a-box:hover {
+    transform: scale(1.2);
+  }
+
   .img-container {
       height: 230px;
       width: 200px;
