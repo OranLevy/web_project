@@ -14,11 +14,11 @@ document.addEventListener(
             focus: 'center',
             autoplay: true,
             interval: 5000,
-            // flickMaxPages: 3,
-            // updateOnMove: true,
-            pagination: true,
+            pagination: false,
             padding: '10%',
-            throttle: 300,
+            // throttle: 300,
+            drag: 'free',
+            // direction: 'rtl',
             breakpoints: {
                 1000: {
                     perPage: 1,
