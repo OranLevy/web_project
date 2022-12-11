@@ -5,3 +5,4 @@ function openHamburger(){
         $('.hamburger-menu').hide();
     }
 }
+//https://splidejs.com/
