@@ -50,18 +50,9 @@ body {
         margin-right: 25px;
     }
 
-    .alcohol-cards-hp {
-        flex-direction: column;
-        height: 1500px !important;
-    }
 
-    .text-intro-hp {
-        font-size: 15px;
-    }
-
-    .alcohol-cards-hp{
+    #alcohol-cards-hp {
         flex-direction: column;
-        height: 1500px !important;
     }
 
     .text-intro-hp {
@@ -223,17 +214,31 @@ body {
     font-size: 18px;
 }
 
-.alcohol-cards-hp {
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    align-items: center;
+
+  #alcohol-cards-section {
     background: #edebeb;
     height: 500px;
-}
+  }
+
+  #alcohol-cards-hp {
+    height: 100%;
+  }
+
+  #alcohol-cards-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
 
 .text-intro-hp {
     font-size: 26px;
+  }
+
+  #alcohol-cards-list li{
+    text-align: center;
+  }
 }
 
 .course-image {
@@ -254,4 +259,5 @@ body {
     right: 16px;
     font-size: 22px;
 }
+
 
