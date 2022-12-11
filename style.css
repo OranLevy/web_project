@@ -126,9 +126,9 @@ body {
 }
 
 .title {
-    width: 14%;
+    width: 100%;
     text-align: center;
-    font-size: 22Px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -195,7 +195,7 @@ body {
     transform: skew(0deg, 13deg);
     font-size: 0px;
     margin: 30px 0px 0px 0px;
-    background: #84a9b2;
+    background: #7f7f7f;
     height: 250px;
     width: 200px;
 }
@@ -214,18 +214,18 @@ body {
 
 .text-container h3 {
     margin: 20px 0px 10px 0px;
-    color: #04bcff;
+    color: #7f7f7f;
     font-size: 18px;
 }
 
 
   #alcohol-cards-section {
     background: #edebeb;
-    height: 500px;
+    height: 600px;
   }
 
   #alcohol-cards-hp {
-    height: 100%;
+    height: 85%;
   }
 
   #alcohol-cards-list {
@@ -261,6 +261,34 @@ body {
     top: 8px;
     right: 16px;
     font-size: 22px;
+}
+
+.alcohol-title {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+}
+
+.products-hp-row {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    padding: 1%;
+    gap: 30px;
+}
+
+.large-product {
+    display: flex;
+    flex-grow: 4;
+    height: 250px;
+    background: radial-gradient(circle at top 50% right 33%, #373737 0%, #1a1a1a 100%);
+}
+
+.small-product {
+    display: flex;
+    flex-grow: 2.5;
+    height: 250px;
+    background: radial-gradient(circle at top 50% right 33%, #373737 0%, #1a1a1a 100%);
 }
 
 
