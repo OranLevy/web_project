@@ -4,43 +4,57 @@ body {
 }
 
 
-.nav-bar-desktop{
+.nav-bar-desktop {
     display: flex;
     width: 100%;
     align-items: center;
     background-color: #414141;
     height: 68px;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
-.nav-bar-mobile{
-    height: 50px;
+.nav-bar-mobile {
+    height: 68px;
     width: 100%;
     display: none;
     background-color: #414141;
 }
 
-.fa.fa-bars{
+.fa.fa-bars {
     display: none;
 }
 
-@media screen and (max-width: 800px){
-    .nav-bar-desktop{
+@media screen and (max-width: 800px) {
+    .nav-bar-desktop {
         display: none;
     }
-    .nav-bar-mobile{
-        display: block;
+
+    .nav-bar-mobile {
+        display: flex;
     }
 
-    .fa.fa-bars{
+    .fa.fa-bars {
         display: block;
-        float: left;
+        /* float: left; */
         color: white;
         font-size: 25px;
         margin-left: 20px;
-        margin-top: 10px;
+        margin-top: 20px;
+    }
+
+    .img-logo {
+        margin-right: 25px;
+    }
+
+    .alcohol-cards-hp {
+        flex-direction: column;
+        height: 1500px !important;
+    }
+
+    .text-intro-hp {
+        font-size: 15px;
     }
 }
 
@@ -74,38 +88,20 @@ body {
 }
 
 
-#logo{
-    /* width: 0;
-    height: 0;
-    border-left: 80px solid transparent;
-    border-right: 80px solid transparent;
-    border-top: 140px solid #D9D9D9; */
-    /* position: absolute; */
-    /* margin-right: 26px; */
-}
-
-.img-logo{
-    /* background-image: url(img/logo-cocktail.png);
-    position: absolute; */
-    width: 70px;
-    height: 70px;
-    /* left: 1324px;
-    top: -1px; */
-}
-
-.hamburger-menu{
+.hamburger-menu {
     display: none;
     width: 100%;
     background: #797878;
     position: absolute;
 }
 
-.hamburger-menu ul{
+.hamburger-menu ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-.hamburger-menu ul li{
+
+.hamburger-menu ul li {
     padding: 15px;
     text-align: center;
     border-bottom: 1px solid white;
@@ -115,8 +111,12 @@ body {
     width: 2%;
 }
 
-.line {
+.half-line {
     width: 41%;
+}
+
+.full-line {
+    width: 96%;
 }
 
 .title {
@@ -127,12 +127,10 @@ body {
 }
 
 .content {
-    margin-top: 20px;
-    margin-left: 20%;
-    margin-right: 20%;
     margin-bottom: 40px;
     text-align: center;
-    font-size: 26px;
+    font-size: 20px;
+    padding: 10px;
 
 }
 
@@ -144,3 +142,101 @@ body {
     float: left;
 }
 
+#logo-mobile {
+    width: 100%;
+    text-align: center;
+}
+
+#logo {
+    margin-right: 35px;
+}
+
+
+/* Cards design */
+.a-box {
+    display: inline-block;
+    width: 240px;
+    text-align: center;
+    transition: transform .2s;
+}
+
+.a-box:hover {
+    transform: scale(1.1);
+}
+
+.img-container {
+    height: 230px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 0px 0px 20px 20px;
+    display: inline-block;
+}
+
+.img-container img {
+    transform: skew(0deg, -13deg);
+    height: 250px;
+    /* margin: -35px 0px 0px -70px; */
+    margin-right: -25px;
+    margin-top: -25px;
+}
+
+.inner-skew {
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0px;
+    transform: skew(0deg, 13deg);
+    font-size: 0px;
+    margin: 30px 0px 0px 0px;
+    background: #84a9b2;
+    height: 250px;
+    width: 200px;
+}
+
+.text-container {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    padding: 120px 20px 20px 20px;
+    border-radius: 20px;
+    background: #fff;
+    margin: -120px 0px 0px 0px;
+    line-height: 19px;
+    font-size: 14px;
+}
+
+.text-container h3 {
+    margin: 20px 0px 10px 0px;
+    color: #04bcff;
+    font-size: 18px;
+}
+
+.alcohol-cards-hp {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    background: #edebeb;
+    height: 500px;
+}
+
+.text-intro-hp {
+    font-size: 26px;
+}
+
+.course-image {
+    width: 100%;
+    bottom: 0px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.top-right {
+    position: absolute;
+    text-decoration: none;
+    top: 8px;
+    right: 16px;
+    font-size: 22px;
+}
