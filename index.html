@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
     <head>
-
         <link rel="stylesheet" href="style.css"/>
         <script type="text/javascript" src="script.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
         <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+        <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
         <title>קקטייל אותי</title>        
     </head>
 
     <body>
-
         <header class="header">
             <nav class="nav-bar-desktop">
                 <div id="logo"><a class="img-logo" href="/"><img src="img/logo-light.png"></a></div>
@@ -62,55 +62,119 @@
                 </div>
                 <div class="clear-left"></div>
             </section>
-            <section class="alcohol-cards-hp">
-                <!-- Card 1 -->
-                <div class="a-box">
-                    <div class="img-container">
-                      <div class="img-inner">
-                        <div class="inner-skew">
-                          <img src="img/vodka.webp">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="text-container">
-                      <h3>וודקה </h3>
-                      <div>
-                        ווֹדקה הוא משקה חריף ומזוקק חסר צבע ממשפחת המשקאות הלבנים, המופק באמצעות התססה וזיקוק של דגנים או תפוחי אדמה.
-                      </div>
-                  </div>
-                </div>
-
-                  <!-- Card 2 -->
-                <div class="a-box">
-                    <div class="img-container">
+            <section class="splide" id="alcohol-cards-section">
+              <div class="splide__track" id="alcohol-cards-hp">
+                <ul class="splide__list" id="alcohol-cards-list">
+                  <!-- Card 1 -->
+                  <li class="splide__slide">
+                    <div class="a-box splide__slide__container">
+                      <div class="img-container">
                         <div class="img-inner">
-                        <div class="inner-skew">
-                            <img src="img/rum.png">
+                          <div class="inner-skew">
+                            <img src="img/vodka.webp">
+                          </div>
                         </div>
+                      </div>
+                      <div class="text-container">
+                        <h3>וודקה </h3>
+                        <div>
+                          ווֹדקה הוא משקה חריף ומזוקק חסר צבע ממשפחת המשקאות הלבנים, המופק באמצעות התססה וזיקוק של דגנים או תפוחי אדמה.
                         </div>
                     </div>
-                    <div class="text-container">
+                  </div>
+                  </li>
+                  <!-- Card 2 -->
+                  <li class="splide__slide">
+                    <div class="a-box splide__slide__container">
+                      <div class="img-container">
+                        <div class="img-inner">
+                          <div class="inner-skew">
+                            <img src="img/rum.png">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-container">
                         <h3>רום</h3>
                         <div>
-                            רוּם הוא משקה אלכוהולי מזוקק המופק מתוצרי לוואי של קנה הסוכר, כגון דבשה ומיץ קנה הסוכר, בתהליך של תסיסה וזיקוק.
-                    </div>
-                    </div>
-                </div>
-                  <!-- Card 3 -->
-                  <div class="a-box">
-                    <div class="img-container">
-                      <div class="img-inner">
-                        <div class="inner-skew">
-                          <img src="img/gin.png">
+                          רוּם הוא משקה אלכוהולי מזוקק המופק מתוצרי לוואי של קנה הסוכר, כגון דבשה ומיץ קנה הסוכר, בתהליך של תסיסה וזיקוק.
                         </div>
                       </div>
                     </div>
-                    <div class="text-container">
-                      <h3>ג׳ין</h3>
-                      <div>
-                        ג'ין הוא משקה אלכוהולי מזוקק חסר צבע ממשפחת המשקאות הלבנים המופק באמצעות התססה וזיקוק של דגנים.
+                  </li>
+                  <!-- Card 3 -->
+                  <li class="splide__slide">
+                    <div class="a-box splide__slide__container">
+                      <div class="img-container">
+                        <div class="img-inner">
+                          <div class="inner-skew">
+                            <img src="img/gin.png">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-container">
+                        <h3>ג׳ין</h3>
+                        <div>
+                          ג'ין הוא משקה אלכוהולי מזוקק חסר צבע ממשפחת המשקאות הלבנים המופק באמצעות התססה וזיקוק של דגנים.
+                        </div>
+                      </div>
                     </div>
-                  </div>
+                  </li>
+                  <!-- Card 4 -->
+                  <li class="splide__slide">
+                    <div class="a-box splide__slide__container">
+                      <div class="img-container">
+                        <div class="img-inner">
+                          <div class="inner-skew">
+                            <img src="img/wiskey.png">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-container">
+                        <h3>וויסקי</h3>
+                        <div>
+                          ג'ין הוא משקה אלכוהולי מזוקק חסר צבע ממשפחת המשקאות הלבנים המופק באמצעות התססה וזיקוק של דגנים.
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- Card 5 -->
+                  <li class="splide__slide">
+                    <div class="a-box splide__slide__container">
+                      <div class="img-container">
+                        <div class="img-inner">
+                          <div class="inner-skew">
+                            <img src="img/campari.webp">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-container">
+                        <h3>קמפרי</h3>
+                        <div>
+                          ג'ין הוא משקה אלכוהולי מזוקק חסר צבע ממשפחת המשקאות הלבנים המופק באמצעות התססה וזיקוק של דגנים.
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- Card 6 -->
+                  <li class="splide__slide">
+                    <div class="a-box splide__slide__container">
+                      <div class="img-container">
+                        <div class="img-inner">
+                          <div class="inner-skew">
+                            <img src="img/tequila.png" style="margin-right: -5px;">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-container">
+                        <h3>טקילה</h3>
+                        <div>
+                          טֶקילה הוא משקה אלכוהולי מזוקק ממשפחת המשקאות הלבנים, המיוצר אך ורק באזורים ספציפיים בחמש מדינות במקסיקו.
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </section>
         </main>
         <footer class="footer">
