@@ -280,10 +280,6 @@ body {
     margin: 0;
 }
 
-.products-hp{
-    display: flex;
-}
-
 .products-hp-row {
     display: flex;
     width: 60%;
