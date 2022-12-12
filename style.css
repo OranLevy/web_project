@@ -58,6 +58,10 @@ body {
     .text-intro-hp {
         font-size: 15px;
       }
+
+    .products-hp-row{
+        flex-direction: column;
+    }
 }
 
 .footer {
@@ -274,6 +278,10 @@ body {
     text-align: center;
     font-size: 30px;
     margin: 0;
+}
+
+.products-hp{
+    display: flex;
 }
 
 .products-hp-row {
