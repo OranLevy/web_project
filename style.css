@@ -255,6 +255,13 @@ body {
     color: white;
 }
 
+.container1 {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
 .top-right {
     position: absolute;
     text-decoration: none;
