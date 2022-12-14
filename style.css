@@ -58,6 +58,10 @@ body {
     .text-intro-hp {
         font-size: 15px;
       }
+
+    .products-hp-row{
+        flex-direction: column;
+    }
 }
 
 .footer {
@@ -255,6 +259,13 @@ body {
     color: white;
 }
 
+.container1 {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
 .top-right {
     position: absolute;
     text-decoration: none;
@@ -292,3 +303,23 @@ body {
 }
 
 
+.p1{
+    /* position: absolute; */
+    color: white;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    color: rgb(180, 171, 171);
+}
+
+h3{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+.products-hp{
+    background-color: #edebeb;
+}
