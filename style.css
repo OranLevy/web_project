@@ -8,7 +8,7 @@ body {
     display: flex;
     width: 100%;
     align-items: center;
-    background-color: #414141;
+    background-color: #282828;
     height: 68px;
     gap: 30px;
     flex-wrap: wrap;
@@ -21,7 +21,7 @@ body {
     height: 68px;
     width: 100%;
     display: none;
-    background-color: #414141;
+    background-color: #282828;
 }
 
 .fa.fa-bars {
@@ -199,7 +199,7 @@ body {
     transform: skew(0deg, 13deg);
     font-size: 0px;
     margin: 30px 0px 0px 0px;
-    background: #7f7f7f;
+    background: #d5c8a8;
     height: 250px;
     width: 200px;
 }
