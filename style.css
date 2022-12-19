@@ -62,6 +62,26 @@ body {
     .products-hp-row{
         flex-direction: column;
     }
+
+    .products-hp{
+        flex-direction: column;
+    }
+
+    .course-hp{
+        flex-direction: column;
+    }
+
+    .prod-hp-img{
+        width: 100%;
+    }
+
+    .course-image{
+        width: 100%;
+    }
+
+    .products{
+        flex-direction: column;
+    }
 }
 
 .footer {
@@ -184,11 +204,11 @@ body {
 }
 
 .img-container img {
-    transform: skew(0deg, -13deg);
-    height: 250px;
+    /* transform: skew(0deg, -13deg); */
+    height: 195px;
     /* margin: -35px 0px 0px -70px; */
-    margin-right: -25px;
-    margin-top: -25px;
+    margin-right: -5px;
+    margin-top: 5px;
 }
 
 .inner-skew {
@@ -196,10 +216,10 @@ body {
     border-radius: 20px;
     overflow: hidden;
     padding: 0px;
-    transform: skew(0deg, 13deg);
+    /* transform: skew(0deg, 13deg); */
     font-size: 0px;
     margin: 30px 0px 0px 0px;
-    background: #d5c8a8;
+    background: #282828;
     height: 250px;
     width: 200px;
 }
@@ -218,14 +238,14 @@ body {
 
 .text-container h3 {
     margin: 20px 0px 10px 0px;
-    color: #7f7f7f;
+    color: #282828;
     font-size: 18px;
 }
 
 
   #alcohol-cards-section {
     background: #edebeb;
-    height: 600px;
+    height: 500px;
   }
 
   #alcohol-cards-hp {
@@ -249,8 +269,7 @@ body {
   }
 
 .course-image {
-    width: 100%;
-    bottom: 0px;
+    border-radius: 10px;
 }
 
 .container {
@@ -259,20 +278,9 @@ body {
     color: white;
 }
 
-.container1 {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    color: white;
-}
 
-.top-right {
-    position: absolute;
-    text-decoration: none;
-    top: 8px;
-    right: 16px;
-    font-size: 22px;
-}
+
+
 
 .alcohol-title {
     text-align: center;
@@ -320,6 +328,84 @@ h3{
     color: black;
 }
 
-.products-hp{
+/* .products-section{
     background-color: #edebeb;
+} */
+
+.products-hp{
+    width: 70%;
+    display: flex;
+    margin: auto;
+    padding: 30px;
+}
+
+.prod-hp-txt{
+    color: black;
+    margin: auto;
+}
+
+.course-hp-txt{
+    color: black;
+    margin: auto;
+    padding: 30px;
+}
+
+.button-prod-hp{
+    height: 50px;
+    width: 200px;
+    background-color: #282828;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 9px 10px 35px 10px rgb(0 0 0 / 30%);
+    border: 1px;
+    font-weight: bold;
+}
+
+.course-hp{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    padding: 30px;
+}
+
+.course-section{
+    background: #edebeb;
+}
+
+
+.products {
+display: flex;
+    color: black;
+    gap: 100px;
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+}
+
+.prod-card {
+    display: flex;
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.prod-img {
+    height: 100%;
+    width: 45%;
+    background: radial-gradient(circle at top 50% right 33%, #646262 0%, #1a1a1a 100%);
+    border-radius: 10px;
+}
+
+.prod-desc {
+    width: 55%;
+    margin: auto;
+    padding: 20px;
+}
+
+.prod-btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px;
+    font-weight: bold;
 }

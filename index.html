@@ -11,7 +11,8 @@
   <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
   <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="img/favicon.jpeg">
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>new WOW().init;</script>
   <title>קקטייל אותי</title>
 </head>
 
@@ -20,7 +21,7 @@
     <nav class="nav-bar-desktop">
       <div id="logo"><a class="img-logo" href="index.html"><img src="img/logo-light.png"></a></div>
       <div><a class="menu-item" href="index.html">עמוד הבית</a></div>
-      <div><a class="menu-item" href="alcohols.html">משפחות אלכוהול</a></div>
+      <div><a class="menu-item" href="alcohols.html">סוגי אלכוהול</a></div>
       <div><a class="menu-item" href="recipes.html">מתכוני קוקטיילים</a></div>
       <div><a class="menu-item" href="shop.html">חנות אביזרים</a></div>
       <div><a class="menu-item" href="course.html">הקורס שלנו</a></div>
@@ -33,7 +34,7 @@
     <div class="hamburger-menu">
       <ul>
         <li><a class="menu-item" href="index.html">עמוד הבית</a></li>
-        <li><a class="menu-item" href="alcohols.html">משפחות אלכוהול</a></li>
+        <li><a class="menu-item" href="alcohols.html">סוגי אלכוהול</a></li>
         <li><a class="menu-item" href="recipes.html">מתכוני קוקטיילים</a></li>
         <li><a class="menu-item" href="shop.html">חנות אביזרים</a></li>
         <li><a class="menu-item" href="course.html">הקורס שלנו</a></li>
@@ -71,9 +72,9 @@
               <div class="clear-left"></div> -->
     </section>
 
-    <section class="splide" id="alcohol-cards-section">
+    <section class="splide wow fadeIn" data-wow-duration="2s" id="alcohol-cards-section">
       <br>
-      <h1 class="alcohol-title">משפחות אלכוהול</h1>
+      <h1 class="alcohol-title">סוגי אלכוהול</h1>
       <div class="splide__track" id="alcohol-cards-hp">
         <ul class="splide__list" id="alcohol-cards-list">
           <!-- Card 1 -->
@@ -190,50 +191,38 @@
         </ul>
       </div>
     </section>
-    <section class="products-hp">
-      <div class="container1">
-        <img class="tools-image" src="img/tools.png">
-        <div>
-          <h3 class="product-title">מוצרים</h3>
-          <div class="products-hp-row">
-            <div class="large-product">
-              <img src="img/filter.jpg" width="47%">
-              <div class="p1">
-                <h2>מסננת</h2>  
-                מסנן את הקוקטייל למשקה נקי
-              </div>
-            </div>
-            <div class="small-product">
-              <img src="img/spoon.png" width="33%">
-              <div class="p1">
-                <h2>כף ערבוב</h2>
-                לערבוב משקה הקוקטייל
-              </div>
-            </div>
+    <section class="products-section">
+      <div class="container">
+        <div class="products-hp">
+          <div class="prod-hp-txt">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto reprehenderit ipsum porro quasi. Aliquam, corrupti minima id ipsum adipisci voluptas tempore cumque accusamus vel ab saepe iure? Tempore, aspernatur laboriosam!
+            </p>
+            <br>
+            <button class="button-prod-hp">Our products</button>
           </div>
-          <div class="products-hp-row">
-            <div class="small-product">
-              <img src="img/shakers.png" width="45%">
-              <div class="p1">
-                <h2>שייקר</h2>
-                לשקשוק מרכיבי הקוקטייל
-              </div>
-            </div>
-            <div class="large-product">
-              <img src="img/mudler.png" width="50%">
-              <div class="p1">
-                <h2>כותש</h2>
-                לכתישת מרכיבי הקוקטייל
-              </div>
-            </div>
+          <div>
+            <img class="prod-hp-img" src="img/tools.png">
           </div>
         </div>
       </div>
-    </section>
-    <section>
+    </section>  
+    <section class="course-section">
       <div class="container">
-        <img class="course-image" src="img/online-mixology_ngwhpe.webp">
-        <div class="top-right">מידע על הקורס שלנו</div>
+        <div class="course-hp">
+          <div class="course-hp-img">
+            <img class="course-image" src="img/rsz_1pexels-studio-naae-13439100.jpg">
+          </div>
+          <div class="course-hp-txt">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto reprehenderit ipsum porro quasi. Aliquam, corrupti minima id ipsum adipisci voluptas tempore cumque accusamus vel ab saepe iure? Tempore, aspernatur laboriosam!
+            </p>
+            <br>
+            <button class="button-prod-hp">Our cocktail class</button>
+          </div>
+        </div>
+        
+        
       </div>
     </section>
   </main>
@@ -248,3 +237,4 @@
 </body>
 
 </html>
+
