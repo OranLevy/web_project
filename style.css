@@ -81,13 +81,15 @@ body {
     .prod-card{
         flex-direction: column;
     }
+
+    .prod-img{
+        height: 200px !important;
+        width: 100% !important;
+    }
 }
 
 .footer {
     background-color: #414141;
-    height: 68px;
-    width: 100%;
-    bottom: 0px;
 }
 
 .nav-bar-footer {
@@ -355,10 +357,11 @@ h3 {
 .products {
 display: flex;
     color: black;
-    gap: 100px;
+    gap: 60px;
     width: 85%;
     margin: auto;
     padding: 20px;
+    max-width: 1440px;
 }
 
 .prod-card {
@@ -382,7 +385,7 @@ display: flex;
 }
 
 .prod-btn {
-    width: 150px;
+    width: 120px;
     height: 40px;
     border-radius: 15px;
     border: 1px;
@@ -391,4 +394,12 @@ display: flex;
 
 .prod-desc-txt {
     font-size: 12px;
+}
+
+h4 {
+    margin: 5px;
+}
+
+.inner-footer {
+    display: flex;
 }
