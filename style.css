@@ -88,6 +88,7 @@ body {
     height: 68px;
     width: 100%;
     bottom: 0px;
+    margin-top: 5px;
 }
 
 .nav-bar-footer {
@@ -419,8 +420,7 @@ body {
 
 .card__publication {
     position: relative;
-    margin-right: 10px;
-    height: 20rem;
+    height: 30rem;
     overflow: hidden;
     background-color: #fff;
 }
@@ -438,7 +438,6 @@ body {
 }
 
 .card__publication>div {
-    /* background: linear-gradient(to right bottom, rgba(255, 119, 48, .8), rgba(255, 185, 0, .8)); */
     font-size: 1.4rem;
     font-weight: bold;
     color: #fff;
@@ -462,24 +461,25 @@ body {
 .card__info {
     direction: ltr;
     position: relative;
-    padding: 2rem 3rem;
+    padding: 10px;
 }
 
 .card__title {
     direction: ltr;
     text-align: left;
-    font-size: 3rem;
+    font-size: 25px;
     color: #414141;
 }
 
 .card__subtitle {
     direction: ltr;
     display: inline-block;
-    font-size: 1.4rem;
+    font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
     color: #a2a2a2;
     margin-bottom: 1rem;
+    padding-top: 20px;
 }
 
 .card__cta {
@@ -500,7 +500,7 @@ body {
     transform: translate(.5rem);
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 650px) {
     .card {
         display: grid;
         grid-auto-flow: column;
@@ -508,8 +508,14 @@ body {
     }
 
     .card__publication {
-        width: 25rem;
-        height: initial;
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .flex-container {
+        flex-wrap: wrap;
     }
 }
 
@@ -518,6 +524,7 @@ body {
     display: flex;
     order: 2;
     color: #414141;
+    padding-bottom: 1px;
 }
 
 .measurement {
@@ -525,6 +532,7 @@ body {
     flex-shrink: 0;
     flex-basis: 10%;
     color: #414141;
+    font-size: 16px;
 }
 
 .ingredient {
@@ -532,12 +540,13 @@ body {
     flex-shrink: 1;
     flex-basis: 40%;
     color: #414141;
+    font-size: 16px;
 }
 
 .alcoho_type {
     text-align: center;
     padding-bottom: 10px;
-    font-size: x-large;
+    font-size: 20px;
 }
 
 .icon {
@@ -546,5 +555,22 @@ body {
     margin: auto;
     height: 100px;
     width: 100px;
-    padding-top: 10px;
+    padding-top: 20px;
+}
+
+.flex-container {
+    direction: ltr;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.flex-container>div {
+    direction: ltr;
+    margin: 5px;
+    padding: 10px;
+    width: 50%;
+    flex-direction: column;
+    flex-grow: 1;
 }
