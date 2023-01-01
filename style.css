@@ -54,7 +54,10 @@ body {
         font-size: 15px;
     }
 
-    .products-hp-row {
+    .products-hp-row{
+        flex-direction: column;
+    }
+      .products-hp-row {
         flex-direction: column;
     }
 
@@ -250,6 +253,8 @@ body {
 
 .text-intro-hp {
     font-size: 26px;
+    margin-top: 40px;
+    padding: 30px
 }
 
 #alcohol-cards-list li {
@@ -399,15 +404,6 @@ h3 {
     box-sizing: border-box;
 }
 
-html {
-    font-size: 62.5%;
-}
-
-body {
-    font-size: 1.6rem;
-    color: #333;
-    background-color: #eee;
-}
 
 .card {
     box-shadow: 2px .8rem 1rem rgba(0, 0, 0, .025);
@@ -574,4 +570,9 @@ body {
 
 .section-space {
     margin-top: 40px;
+}
+
+.cocktails-sec{
+    width: 80%;
+    margin: auto;
 }
