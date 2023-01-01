@@ -410,8 +410,6 @@ body {
 }
 
 .card {
-    /* padding-top: 10px;
-    padding-bottom: 10px; */
     box-shadow: 2px .8rem 1rem rgba(0, 0, 0, .025);
     margin: auto;
     background-color: white;
@@ -566,13 +564,11 @@ body {
     padding-right: 10px;
     gap: 30px;
     margin-top: 30px;
-    /* margin-bottom: 30px; */
 }
 
 .flex-container>div {
     direction: ltr;
     margin: 5px;
-    /* padding: 10px; */
     width: 50%;
     flex-direction: column;
     flex-grow: 1;
