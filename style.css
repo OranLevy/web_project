@@ -400,15 +400,6 @@ h3 {
     box-sizing: border-box;
 }
 
-html {
-    font-size: 62.5%;
-}
-
-body {
-    font-size: 1.6rem;
-    color: #333;
-    background-color: #eee;
-}
 
 .card {
     box-shadow: 2px .8rem 1rem rgba(0, 0, 0, .025);
@@ -580,4 +571,9 @@ body {
     width: 50%;
     flex-grow: 1;
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 25%);
+}
+
+.main-cocktail{
+    width: 85%;
+    margin: auto;
 }
