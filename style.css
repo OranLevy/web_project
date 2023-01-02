@@ -9,7 +9,7 @@ body {
     align-items: center;
     background-color: #282828;
     height: 68px;
-    gap: 30px;
+    gap: 40px;
     flex-wrap: wrap;
     flex-direction: row;
 }
@@ -38,12 +38,12 @@ body {
         display: block;
         color: white;
         font-size: 25px;
-        margin-left: 20px;
+        margin-right: 20px;
         margin-top: 20px;
     }
 
     .img-logo {
-        margin-right: 25px;
+        margin-left: 25px;
     }
 
     #alcohol-cards-hp {
@@ -117,6 +117,7 @@ body {
     width: 100%;
     background: #797878;
     position: absolute;
+    z-index: 1;
 }
 
 .hamburger-menu ul {
@@ -152,13 +153,15 @@ body {
     text-align: center;
     font-size: 30px;
     font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .content {
     margin-bottom: 40px;
     text-align: center;
     font-size: 20px;
-    padding: 10px;
+    padding: 30px;
 }
 
 .clear-left {
@@ -175,7 +178,7 @@ body {
 }
 
 #logo {
-    margin-right: 35px;
+    margin-left: 35px;
 }
 
 .a-box {
@@ -582,4 +585,9 @@ h3 {
 .main-cocktail{
     width: 85%;
     margin: auto;
+}
+
+.footer-icon{
+    margin-right: 5px;
+    font-size: 20px;
 }
