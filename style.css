@@ -3,25 +3,22 @@ body {
     font-family: 'Rubik';
 }
 
-
 .nav-bar-desktop {
     display: flex;
     width: 100%;
     align-items: center;
-    background-color: #414141;
+    background-color: #282828;
     height: 68px;
     gap: 30px;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
-
 .nav-bar-mobile {
-
     height: 68px;
     width: 100%;
     display: none;
-    background-color: #414141;
+    background-color: #282828;
 }
 
 .fa.fa-bars {
@@ -39,7 +36,6 @@ body {
 
     .fa.fa-bars {
         display: block;
-        /* float: left; */
         color: white;
         font-size: 25px;
         margin-left: 20px;
@@ -50,16 +46,39 @@ body {
         margin-right: 25px;
     }
 
-
     #alcohol-cards-hp {
         flex-direction: column;
     }
 
     .text-intro-hp {
         font-size: 15px;
-      }
+    }
 
-    .products-hp-row{
+    .products-hp-row {
+        flex-direction: column;
+    }
+
+    .products-hp {
+        flex-direction: column;
+    }
+
+    .course-hp {
+        flex-direction: column;
+    }
+
+    .prod-hp-img {
+        width: 100%;
+    }
+
+    .course-image {
+        width: 100%;
+    }
+
+    .products {
+        flex-direction: column;
+    }
+
+    .prod-card {
         flex-direction: column;
     }
 }
@@ -69,6 +88,7 @@ body {
     height: 68px;
     width: 100%;
     bottom: 0px;
+    margin-top: 30px;
 }
 
 .nav-bar-footer {
@@ -88,11 +108,9 @@ body {
     width: 100%;
     height: auto;
     z-index: -1;
-    /* position: absolute; */
     left: 0px;
     right: 0px;
 }
-
 
 .hamburger-menu {
     display: none;
@@ -134,6 +152,8 @@ body {
     text-align: center;
     font-size: 30px;
     font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .content {
@@ -151,19 +171,15 @@ body {
     float: left;
 }
 
-
 #logo-mobile {
     width: 100%;
     text-align: center;
 }
 
-
 #logo {
-    margin-right: 35px;
+    margin-left: 35px;
 }
 
-
-/* Cards design */
 .a-box {
     display: inline-block;
     width: 240px;
@@ -184,11 +200,11 @@ body {
 }
 
 .img-container img {
-    transform: skew(0deg, -13deg);
-    height: 250px;
+    /* transform: skew(0deg, -13deg); */
+    height: 195px;
     /* margin: -35px 0px 0px -70px; */
-    margin-right: -25px;
-    margin-top: -25px;
+    margin-right: -5px;
+    margin-top: 5px;
 }
 
 .inner-skew {
@@ -196,82 +212,61 @@ body {
     border-radius: 20px;
     overflow: hidden;
     padding: 0px;
-    transform: skew(0deg, 13deg);
     font-size: 0px;
     margin: 30px 0px 0px 0px;
-    background: #7f7f7f;
+    background: #282828;
     height: 250px;
     width: 200px;
 }
 
 .text-container {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-
     padding: 120px 20px 20px 20px;
     border-radius: 20px;
     background: #fff;
     margin: -120px 0px 0px 0px;
     line-height: 19px;
     font-size: 14px;
-
 }
 
 .text-container h3 {
     margin: 20px 0px 10px 0px;
-    color: #7f7f7f;
+    color: #282828;
     font-size: 18px;
 }
 
-
-  #alcohol-cards-section {
+#alcohol-cards-section {
     background: #edebeb;
-    height: 600px;
-  }
+    height: 500px;
+}
 
-  #alcohol-cards-hp {
+#alcohol-cards-hp {
     height: 85%;
-  }
+}
 
-  #alcohol-cards-list {
+#alcohol-cards-list {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-  }
-
+}
 
 .text-intro-hp {
     font-size: 26px;
-  }
+}
 
-  #alcohol-cards-list li{
+#alcohol-cards-list li {
     text-align: center;
-  }
+}
 
 .course-image {
-    width: 100%;
-    bottom: 0px;
+    border-radius: 10px;
 }
 
 .container {
     position: relative;
     text-align: center;
     color: white;
-}
-
-.container1 {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    color: white;
-}
-
-.top-right {
-    position: absolute;
-    text-decoration: none;
-    top: 8px;
-    right: 16px;
-    font-size: 22px;
 }
 
 .alcohol-title {
@@ -302,24 +297,329 @@ body {
     background: radial-gradient(circle at top 50% right 33%, #373737 0%, #1a1a1a 100%);
 }
 
-
-.p1{
-    /* position: absolute; */
+.p1 {
     color: white;
     text-align: center;
 }
 
-h2{
+h2 {
     text-align: center;
     color: rgb(180, 171, 171);
 }
 
-h3{
+h3 {
     text-align: center;
     font-size: 30px;
     color: black;
 }
 
-.products-hp{
-    background-color: #edebeb;
+.products-hp {
+    width: 70%;
+    display: flex;
+    margin: auto;
+    padding: 30px;
+}
+
+.prod-hp-txt {
+    color: black;
+    margin: auto;
+}
+
+.course-hp-txt {
+    color: black;
+    margin: auto;
+    padding: 30px;
+}
+
+.button-prod-hp {
+    height: 50px;
+    width: 200px;
+    background-color: #282828;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 9px 10px 35px 10px rgb(0 0 0 / 30%);
+    border: 1px;
+    font-weight: bold;
+}
+
+.course-hp {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    padding: 30px;
+}
+
+.course-section {
+    background: #edebeb;
+}
+
+
+.products {
+    display: flex;
+    color: black;
+    gap: 100px;
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+}
+
+.prod-card {
+    display: flex;
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.prod-img {
+    height: 100%;
+    width: 45%;
+    background: radial-gradient(circle at top 50% right 33%, #646262 0%, #1a1a1a 100%);
+    border-radius: 10px;
+}
+
+.prod-desc {
+    width: 55%;
+    margin: auto;
+    padding: 20px;
+}
+
+.prod-btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px;
+    font-weight: bold;
+}
+
+.prod-desc-txt {
+    font-size: 12px;
+}
+
+/* recipes section */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.card {
+    box-shadow: 2px .8rem 1rem rgba(0, 0, 0, .025);
+    margin: auto;
+    background-color: white;
+}
+
+.card__publication {
+    position: relative;
+    height: 30rem;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.card__publication img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .5s;
+}
+
+.card:hover .card__publication img {
+    transform: scale(1.5);
+}
+
+.card__publication>div {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    inset: 0;
+    padding: 1rem;
+}
+
+.card__publication i {
+    margin-right: 1rem;
+}
+
+.card__publication span {
+    display: block;
+}
+
+.card__author {
+    margin-bottom: .5rem;
+}
+
+.card__info {
+    direction: ltr;
+    position: relative;
+    padding: 15px;
+    width: 100%;
+}
+
+.card__title {
+    direction: ltr;
+    text-align: left;
+    font-size: 25px;
+    color: #414141;
+}
+
+.card__subtitle {
+    direction: ltr;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #a2a2a2;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.card__cta {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #414141;
+    margin-top: 2rem;
+}
+
+.card__cta span {
+    display: inherit;
+    transition: transform .5s;
+}
+
+.card__cta:hover span {
+    transform: translate(.5rem);
+}
+
+@media screen and (min-width: 650px) {
+    .card {
+        display: flex;
+        max-width: 75rem;
+    }
+
+    .card__publication {
+        width: 250px;
+        height: 250px;
+    }
+
+    .card__info {
+        direction: ltr;
+        position: relative;
+        padding: 15px;
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .flex-container {
+        flex-wrap: wrap;
+    }
+}
+
+.card__description {
+    direction: ltr;
+    display: flex;
+    order: 2;
+    color: #414141;
+    padding-bottom: 1px;
+}
+
+.measurement {
+    color: #414141;
+    font-size: 16px;
+    width: 30%;
+}
+
+.ingredient {
+
+    color: #414141;
+    font-size: 16px;
+    width: 70%;
+}
+
+.alcoho_type {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.icon {
+    display: block;
+    direction: ltr;
+    margin: auto;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.flex-container {
+    direction: ltr;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.flex-container>div {
+    direction: ltr;
+    margin: 5px;
+    width: 50%;
+    flex-grow: 1;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 25%);
+}
+
+.main-cocktail {
+    width: 85%;
+    margin: auto;
+}
+
+/* course */
+.course-container {
+    direction: ltr;
+    display: flex;
+}
+
+.course-container>div {
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.course-img {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.suitable-for-container {
+    direction: ltr;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.suitable-for-container div {
+    display: flex;
+    direction: ltr;
+    font-size: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.suitable-for-container-img {
+    width: 50px;
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
