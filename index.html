@@ -12,10 +12,10 @@
   <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
   <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="img/favicon.jpeg">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-  <script>new WOW().init;</script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <title>weCocktail</title>
 </head>
 
@@ -47,7 +47,7 @@
     </div>
   </header>
   <main>
-    <section class="text-intro-hp">
+    <section class="text-intro-hp" data-aos="fade-up">
       <div>
         <h1 class="title">What is a cocktail?</h1>
       </div>
@@ -66,7 +66,7 @@
               <div class="clear-left"></div> -->
     </section>
 
-    <section class="splide wow fadeIn" data-wow-duration="2s" id="alcohol-cards-section">
+    <section class="splide" id="alcohol-cards-section" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="300">
       <br>
       <h1 class="alcohol-title">Alcohol types</h1>
       <div class="splide__track" id="alcohol-cards-hp">
@@ -187,7 +187,7 @@
     </section>
     <section class="products-section">
       <div class="container">
-        <div class="products-hp animate__animated animate__fadeInUp">
+        <div class="products-hp" data-aos="fade-left" data-aos-offset="300">
           <div class="prod-hp-txt">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto reprehenderit ipsum porro quasi. Aliquam, corrupti minima id ipsum adipisci voluptas tempore cumque accusamus vel ab saepe iure? Tempore, aspernatur laboriosam!
@@ -203,7 +203,7 @@
     </section>  
     <section class="course-section">
       <div class="container">
-        <div class="course-hp">
+        <div class="course-hp" data-aos="fade-right" data-aos-offset="300">
           <div class="course-hp-img">
             <img class="course-image" src="img/rsz_1pexels-studio-naae-13439100.jpg">
           </div>
@@ -291,6 +291,13 @@
     </div>
     <!-- Grid container -->
   </footer>
+  <script>
+    AOS.init({
+      duration: 1600,
+      once: true,
+      // delay: 400,
+    });
+  </script>
 </body>
 
 </html>
