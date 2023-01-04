@@ -668,6 +668,7 @@ h3 {
     width: 50%;
     text-align: center;
     box-shadow: 2px .8rem 1rem rgba(0, 0, 0, .025);
+    transform: translate(.5rem);
 }
 
 @media screen and (max-width: 1100px) {
@@ -823,4 +824,9 @@ a:link {
 /* Alcohols */
 .alcohol-width {
     width: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: 2px .8rem 1rem rgba(0, 0, 0, .025);
 }
