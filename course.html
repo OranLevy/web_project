@@ -81,10 +81,12 @@
           </div>
           <div class="course-buttons">
             <div class="course-content">
-              Price: 3,000₪
+              <p1>Price: 3,000₪</p1>
             </div>
-            <div class="course-content">
-              Click to leave details
+            <div class="course-content link-color">
+              <a href="#details">
+                <p1>Click to leave details</p1>
+              </a>
             </div>
           </div>
         </div>
@@ -118,10 +120,12 @@
           </div>
           <div class="course-buttons">
             <div class="course-content">
-              Price: 3,200₪
+              <p1>Price: 3,200₪</p1>
             </div>
-            <div class="course-content">
-              Click to leave details
+            <div class="course-content link-color">
+              <a href="#details">
+                <p1>Click to leave details</p1>
+              </a>
             </div>
           </div>
         </div>
@@ -146,10 +150,12 @@
           </div>
           <div class="course-buttons">
             <div class="course-content">
-              Price: 1,500₪
+              <p1>Price: 1,500₪</p1>
             </div>
-            <div class="course-content">
-              Click to leave details
+            <div class="course-content link-color">
+              <a href="#details">
+                <p1>Click to leave details</p1>
+              </a>
             </div>
           </div>
         </div>
@@ -159,7 +165,7 @@
       </div>
     </section>
 
-    <section>
+    <section style="margin-bottom: 20px;">
       <div class="title">Who is it suitable for ?</div>
       <div class="suitable-for-container">
         <div>
@@ -180,8 +186,63 @@
         </div>
     </section>
 
-    <section>
-
+    <section style="background-color: #edebeb;">
+      <form action="mailto:galfo@mta.ac.il" method="post">
+        <fieldset>
+          <div class="title" id="details" style="padding: 30px; margin-top: unset;">For more information leave details
+          </div>
+          <div class="form-container">
+            <div class="data-container">
+              <div class="value">
+                <label>First Name</label>
+              </div>
+              <div>
+                <input class="field" type="firstname" name="firstname">
+              </div>
+            </div>
+            <div class="data-container">
+              <div class="value">
+                <label>Last Name</label>
+              </div>
+              <div>
+                <input class="field" type="lastname" name="lastname">
+              </div>
+            </div>
+            <div class="data-container">
+              <div class="value">
+                <label>Phone</label>
+              </div>
+              <div>
+                <input class="field" type="tel" name="phone">
+              </div>
+            </div>
+            <div class="data-container">
+              <div class="value">
+                <label>Email</label>
+              </div>
+              <div>
+                <input class="field" type="email" name="email">
+              </div>
+            </div>
+            <div class="data-container">
+              <div class="value">
+                <lable>Course</lable>
+              </div>
+              <div>
+                <select class="field" name="course;">
+                  <option value="Null" selected></option>
+                  <option value="Professional">Professional</option>
+                  <option value="Comprehensive">Comprehensive</option>
+                  <option value="Online">Online</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div style="display: flex; justify-content: center; padding: 30px;">
+            <input class="send-button" type="submit" value="Send">
+          </div>
+        </fieldset>
+      </form>
     </section>
 
   </main>

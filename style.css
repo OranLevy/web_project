@@ -739,6 +739,83 @@ h3 {
     display: flex;
 }
 
-.footer-link{
+.footer-link {
     text-decoration: none;
+}
+
+.form-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.data-container {
+    display: flex;
+    gap: 10px;
+}
+
+.value {
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.field {
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border: solid 1px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1350px) {
+    .form-container {
+        flex-direction: column;
+    }
+
+    .data-container {
+        justify-content: center;
+    }
+
+    .value {
+        width: 100px;
+        text-align: left;
+    }
+
+    .field {
+        width: 200px;
+        text-align: left;
+        padding-left: 10px;
+    }
+}
+
+p1 {
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.link-color:hover {
+    background-color: #414141;
+}
+
+.send-button {
+    background-color: #282828;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 25%;
+    text-align: center;
+    box-shadow: 2px .8rem 1rem rgba(0, 0, 0, .025);
+    border: solid 1px;
+    font-size: 18px;
+}
+
+.send-button:hover {
+    background-color: #414141;
 }
