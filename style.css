@@ -821,7 +821,7 @@ a:link {
     background-color: #414141;
 }
 
-/* Alcohols */
+/* Alcohol types */
 .alcohol-width {
     width: 80%;
     padding-top: 20px;
@@ -829,4 +829,94 @@ a:link {
     padding-left: 40px;
     padding-right: 40px;
     box-shadow: 2px .8rem 1rem rgba(0, 0, 0, .025);
+}
+
+.alcohol_card {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.alcohol_img {
+    width: 30%;
+}
+
+.alcohol_img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.alcohol_info {
+    width: 70%;
+    margin: 20px;
+}
+
+.alcohol_title {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #414141;
+}
+
+.alcohol_content {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+    .alcohol_card {
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .alcohol_card div {
+        width: 100%;
+    }
+
+    .alcohol_img {
+        width: 100%;
+        object-fit: scale-down;
+    }
+
+    .alcohol_img img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: unset;
+    }
+
+    .alcohol_content {
+        width: 90%;
+    }
+
+    .alcohol_title {
+        font-size: 25px;
+    }
+
+    .alcohol_content {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .alcohol_card {
+        flex-direction: column;
+        width: 75%;
+    }
+
+    .alcohol_content {
+        width: 85%;
+    }
+
+    .alcohol_title {
+        font-size: 20px;
+    }
+
+    .alcohol_content {
+        font-size: 14px;
+    }
 }
