@@ -677,6 +677,7 @@ h3 {
     width: 50%;
     text-align: center;
     box-shadow: 2px .8rem 1rem rgba(0, 0, 0, .025);
+    transform: translate(.5rem);
 }
 
 @media screen and (max-width: 1100px) {
@@ -748,6 +749,161 @@ h3 {
     display: flex;
 }
 
-.footer-link{
+.footer-link {
     text-decoration: none;
+}
+
+.form-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.data-container {
+    display: flex;
+    gap: 10px;
+}
+
+.value {
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.field {
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border: solid 1px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1350px) {
+    .form-container {
+        flex-direction: column;
+    }
+
+    .data-container {
+        justify-content: center;
+    }
+
+    .value {
+        width: 100px;
+        text-align: left;
+    }
+
+    .field {
+        width: 200px;
+        text-align: left;
+        padding-left: 10px;
+    }
+}
+
+p1 {
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.link-color:hover {
+    background-color: #414141;
+}
+
+.send-button {
+    background-color: #282828;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 25%;
+    text-align: center;
+    box-shadow: 2px .8rem 1rem rgba(0, 0, 0, .025);
+    border: solid 1px;
+    font-size: 18px;
+}
+
+.send-button:hover {
+    background-color: #414141;
+}
+
+/* Alcohol types */
+.alcohol_card {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 25%);
+}
+
+.alcohol_img {
+    width: 30%;
+}
+
+.alcohol_img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.alcohol_info {
+    width: 70%;
+    margin: 20px;
+}
+
+.alcohol_title {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #414141;
+}
+
+.alcohol_content {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+    .alcohol_card {
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .alcohol_card div {
+        width: unset;
+    }
+
+    .alcohol_img img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: unset;
+    }
+
+    .alcohol_title {
+        font-size: 25px;
+    }
+
+    .alcohol_content {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .alcohol_card {
+        width: 75%;
+    }
+
+    .alcohol_title {
+        font-size: 20px;
+    }
+
+    .alcohol_content {
+        font-size: 14px;
+    }
 }
