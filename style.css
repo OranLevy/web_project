@@ -38,7 +38,7 @@ body {
         display: block;
         color: white;
         font-size: 25px;
-        margin-left: 20px;
+        margin-right: 15px;
         margin-top: 20px;
     }
 
@@ -117,6 +117,7 @@ body {
     width: 100%;
     background: #797878;
     position: absolute;
+    z-index: 10;
 }
 
 .hamburger-menu ul {
@@ -176,6 +177,8 @@ body {
 #logo-mobile {
     width: 100%;
     text-align: center;
+    margin-left: 50px;
+    margin-top: 5px;
 }
 
 #logo {
@@ -405,7 +408,7 @@ h3 {
 }
 
 
-.card {
+.card_recipe {
     box-shadow: 2px .8rem 1rem rgba(0, 0, 0, .025);
     margin: auto;
     background-color: white;
@@ -429,7 +432,7 @@ h3 {
     transition: transform .5s;
 }
 
-.card:hover .card__publication img {
+.card_recipe:hover .card__publication img {
     transform: scale(1.5);
 }
 
@@ -457,8 +460,9 @@ h3 {
 .card__info {
     direction: ltr;
     position: relative;
-    padding: 15px;
+    padding: 15px 15px 15px 15px;
     width: 100%;
+    line-height: initial;
 }
 
 .card__title {
@@ -477,6 +481,7 @@ h3 {
     color: #a2a2a2;
     margin-top: 10px;
     margin-bottom: 5px;
+    line-height: unset;
 }
 
 .card__cta {
@@ -498,7 +503,7 @@ h3 {
 }
 
 @media screen and (min-width: 900px) {
-    .card {
+    .card_recipe {
         display: flex;
         max-width: 75%;
         border-radius: 10px;
@@ -514,8 +519,9 @@ h3 {
     .card__info {
         direction: ltr;
         position: relative;
-        padding: 15px;
+        padding: 15px 15px 15px 15px;
         width: 55%;
+        line-height: initial;
     }
 }
 
@@ -531,6 +537,8 @@ h3 {
     order: 2;
     color: #414141;
     padding-bottom: 1px;
+    margin-bottom: unset;
+    line-height: unset;
 }
 
 .measurement {
@@ -586,6 +594,7 @@ h3 {
 .main-cocktail {
     width: 85%;
     margin: auto;
+    margin-bottom: 60px;
 }
 
 /* courses section */
