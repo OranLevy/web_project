@@ -5,6 +5,24 @@ function openHamburger(){
         $('.hamburger-menu').hide();
     }
 }
+
+function getProducts(){
+    let request = new XMLHttpRequest();
+    request.onreadystatechange = function(){
+        if(request.readyState === 4 && request.status === 200){
+            console.log(request);
+            // document.getElementById('error').innerHTML = request.responseText;
+            let data = JSON.parse(request.responseText)
+            console.log(data);
+            for(let i = 0; i < data.length; i++){
+                console.log(data[i]);
+            }
+        }
+    }
+    request.open('POST', 'shop.php', true);
+    request.setRequestHeader('Content-type', 'application/json');
+    request.send();
+}
 //https://splidejs.com/
 document.addEventListener(
     'DOMContentLoaded', function(){
