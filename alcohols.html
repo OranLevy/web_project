@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css" />
   <script type="text/javascript" src="script.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
   <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
-  <title>קקטייל אותי</title>
+  <title>weCocktail</title>
 </head>
 
 <main>
@@ -18,35 +19,34 @@
   <body style="background-color: #eee;">
     <header class="header">
       <nav class="nav-bar-desktop">
-        <div id="logo"><a class="img-logo" href="index.html"><img src="img/logo-light.png"></a></div>
-        <div><a class="menu-item" href="index.html">עמוד הבית</a></div>
-        <div><a class="menu-item" href="alcohols.html">משפחות אלכוהול</a></div>
-        <div><a class="menu-item" href="recipes.html">מתכוני קוקטיילים</a></div>
-        <div><a class="menu-item" href="shop.html">חנות אביזרים</a></div>
-        <div><a class="menu-item" href="course.html">הקורס שלנו</a></div>
+        <div id="logo"><a class="img-logo" href="index.html"><img src="img/New Icon.png" style="width: 55px;"></a></div>
+        <div><a class="menu-item" href="index.html">Home</a></div>
+        <div><a class="menu-item" href="alcohols.html">Alcohol</a></div>
+        <div><a class="menu-item" href="recipes.html">Coktails</a></div>
+        <div><a class="menu-item" href="shop.html">Shop</a></div>
+        <div><a class="menu-item" href="course.html">Courses</a></div>
       </nav>
       <nav class="nav-bar-mobile">
-        <div id="logo-mobile"><a class="img-logo" href="index.html"><img src="img/logo-light.png"></a></div>
+        <div id="logo-mobile"><a class="img-logo" href="/index.html"><img src="img/New Icon.png"
+              style="width: 55px;"></a></div>
         <i class="fa fa-bars" onclick="openHamburger()"></i>
       </nav>
-
       <div class="hamburger-menu">
         <ul>
-          <li><a class="menu-item" href="index.html">עמוד הבית</a></li>
-          <li><a class="menu-item" href="alcohols.html">משפחות אלכוהול</a></li>
-          <li><a class="menu-item" href="recipes.html">מתכוני קוקטיילים</a></li>
-          <li><a class="menu-item" href="shop.html">חנות אביזרים</a></li>
-          <li><a class="menu-item" href="course.html">הקורס שלנו</a></li>
+          <li><a class="menu-item" href="index.html">Home</a></li>
+          <li><a class="menu-item" href="alcohols.html">Alcohol</a></li>
+          <li><a class="menu-item" href="recipes.html">Cocktails</a></li>
+          <li><a class="menu-item" href="shop.html">Shop</a></li>
+          <li><a class="menu-item" href="course.html">Courses</a></li>
         </ul>
       </div>
-
       <div class="hero-image">
         <img src="img/alcohol/Alcohol Hero.jpeg">
       </div>
     </header>
 
     <section>
-      <div class="alcohol_card" id="tequila" style="margin-top: 40px;">
+      <div class="alcohol_card" id="tequila" style="margin-top: 60px;">
         <div class="alcohol_img">
           <img src="img/alcohol/tequila.JPG" alt="image">
         </div>
@@ -66,7 +66,7 @@
     </section>
 
     <section>
-      <div class="alcohol_card" id="gin" style="margin-top: 40px;">
+      <div class="alcohol_card" id="gin" style="margin-top: 60px;">
         <div class="alcohol_img">
           <img src="img/alcohol/gin.JPG" alt="image">
         </div>
@@ -86,7 +86,7 @@
     </section>
 
     <section>
-      <div class="alcohol_card" id="rum" style="margin-top: 40px;">
+      <div class="alcohol_card" id="rum" style="margin-top: 60px;">
         <div class="alcohol_img">
           <img src="img/alcohol/rum.jpg" alt="image">
         </div>
@@ -107,7 +107,7 @@
     </section>
 
     <section>
-      <div class="alcohol_card" id="vodka" style="margin-top: 40px;">
+      <div class="alcohol_card" id="vodka" style="margin-top: 60px;">
         <div class="alcohol_img">
           <img src="img/alcohol/vodka.jpg" alt="image">
         </div>
@@ -126,7 +126,7 @@
     </section>
 
     <section>
-      <div class="alcohol_card" id="whiskey" style="margin-top: 40px;">
+      <div class="alcohol_card" id="whiskey" style="margin-top: 60px;">
         <div class="alcohol_img">
           <img src="img/alcohol/whiskey.jpg" alt="image">
         </div>
@@ -147,7 +147,7 @@
     </section>
 
     <section>
-      <div class="alcohol_card" id="brandy" style="margin-top: 40px;">
+      <div class="alcohol_card" id="brandy" style="margin-top: 60px;">
         <div class="alcohol_img">
           <img src="img/alcohol/brandy.jpg" alt="image">
         </div>
@@ -157,17 +157,16 @@
             Brandy is a liquor produced by distilling wine. Brandy generally contains 35–60% alcohol by volume and is
             typically consumed as an after-dinner digestif. Some brandies are aged in wooden casks. Others are coloured
             with caramel colouring to imitate the effect of ageing, and some are produced using a combination of ageing
-            and colouring. Varieties of wine brandy can be found
-            across the winemaking world. In a broader sense, the term brandy also denotes liquors obtained from the
-            distillation of pomace, or mash or wine of any other fruit. These products are also called eau de vie (which
-            translates to "water of life").
+            and colouring. Varieties of wine brandy can be found across the winemaking world. In a broader sense, the
+            term brandy also denotes liquors obtained from the distillation of pomace, or mash or wine of any other
+            fruit. These products are also called eau de vie (which translates to "water of life").
           </p>
         </div>
       </div>
     </section>
 
     <section>
-      <div class="alcohol_card" id="cognac" style="margin-top: 40px;">
+      <div class="alcohol_card" id="cognac" style="margin-top: 60px;">
         <div class="alcohol_img">
           <img src="img/alcohol/cognac.jpg" alt="image">
         </div>
@@ -187,7 +186,7 @@
     </section>
 
     <section>
-      <div class="alcohol_card" id="aperol" style="margin-top: 40px;">
+      <div class="alcohol_card" id="aperol" style="margin-top: 60px;">
         <div class="alcohol_img">
           <img src="img/alcohol/aperol.jpg" alt="image">
         </div>
@@ -207,7 +206,7 @@
     </section>
 
     <section>
-      <div class="alcohol_card" id="campari" style="margin-top: 40px;">
+      <div class="alcohol_card" id="campari" style="margin-top: 60px;">
         <div class="alcohol_img">
           <img src="img/alcohol/campari.jpg" alt="image">
         </div>
@@ -225,7 +224,7 @@
     </section>
 
     <section>
-      <div class="alcohol_card" id="arak" style="margin-top: 40px;">
+      <div class="alcohol_card" id="arak" style="margin-top: 60px;">
         <div class="alcohol_img">
           <img src="img/alcohol/arak.jpg" alt="image">
         </div>
@@ -246,7 +245,7 @@
     </section>
 
     <section>
-      <div class="alcohol_card" id="ouzo" style="margin-top: 40px;">
+      <div class="alcohol_card" id="ouzo" style="margin-top: 60px; margin-bottom: 60px;">
         <div class="alcohol_img">
           <img src="img/alcohol/ouzo.JPG" alt="image">
         </div>
@@ -267,8 +266,74 @@
 
 </main>
 
-<footer>
+<footer class="text-center text-lg-start text-white" style="background-color: #282828">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">
+            wecocktail
+          </h6>
+          <p>
+            <img src="img/New%20Icon.png" style="width: 45%">
+          </p>
+        </div>
+        <!-- Grid column -->
 
+        <hr class="w-100 clearfix d-md-none" />
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <!-- <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6> -->
+          <p>
+            <a class="text-white footer-link" href="alcohols.html">Alcohol types</a>
+          </p>
+          <p>
+            <a class="text-white footer-link" href="recipes.html">Cocktail recipes</a>
+          </p>
+          <p>
+            <a class="text-white footer-link" href="shop.html">Accessories shop</a>
+          </p>
+          <p>
+            <a class="text-white footer-link" href="course.html">Our courses</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="w-100 clearfix d-md-none" />
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+          <p><i class="footer-icon ri-map-pin-2-line"></i>Academic College Tel Aviv - Yafo, IL</p>
+          <p><i class="ri-mail-line"></i> info@wecocktail.com</p>
+          <p><i class="ri-phone-line"></i> + 01 234 567 88</p>
+          <p><i class="ri-phone-line"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+
+    <hr class="my-3">
+
+    <!-- Section: Copyright -->
+    <section>
+      <!-- Grid column -->
+      <!-- Copyright -->
+      <div class="row" style="justify-content: center; height: 60px; align-items: center;">
+        © 2023 Copyright: Oran, Gal & Or
+      </div>
+      <!-- Copyright -->
+    </section>
+    <!-- Section: Copyright -->
+  </div>
+  <!-- Grid container -->
 </footer>
 
 </body>
