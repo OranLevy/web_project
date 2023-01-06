@@ -63,7 +63,7 @@ body {
     }
 
     .course-hp {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .prod-hp-img {
@@ -243,7 +243,7 @@ body {
 
 #alcohol-cards-section {
     background: #edebeb;
-    height: 500px;
+    height: 620px;
 }
 
 #alcohol-cards-hp {
@@ -267,6 +267,7 @@ body {
 
 .course-image {
     border-radius: 10px;
+    margin-top: 40px;
 }
 
 .container {
@@ -334,7 +335,7 @@ h3 {
 .course-hp-txt {
     color: black;
     margin: auto;
-    padding: 30px;
+    /*padding: 30px;*/
 }
 
 .button-prod-hp {

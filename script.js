@@ -28,3 +28,10 @@ document.addEventListener(
         }).mount()
     }
 )
+
+// Animation
+AOS.init({
+    duration: 1000,
+    once: true,
+    // delay: 400,
+});
