@@ -650,6 +650,10 @@ h3 {
     transform: translate(.5rem);
 }
 
+p1 {
+    color: white;
+}
+
 @media screen and (max-width: 1100px) {
     .course-container {
         flex-direction: column;
@@ -804,7 +808,7 @@ a:link {
 }
 
 .alcohol_img {
-    width: 25%;
+    width: 20%;
     padding: 20px;
     margin-top: auto;
     margin-bottom: auto;
@@ -817,16 +821,16 @@ a:link {
 }
 
 .alcohol_info {
-    width: 75%;
+    width: 80%;
     margin-top: auto;
     margin-bottom: auto;
-    padding: 20px;
-    padding-left: unset;
+    padding: 30px;
+    padding-left: 10px;
 }
 
 .alcohol_title {
     margin-bottom: 10px;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: bold;
     color: #414141;
 }
@@ -871,7 +875,7 @@ a:link {
     }
 
     .alcohol_title {
-        font-size: 25px;
+        font-size: 24px;
     }
 
     .alcohol_content {
@@ -893,7 +897,7 @@ a:link {
     }
 
     .alcohol_title {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .alcohol_content {
