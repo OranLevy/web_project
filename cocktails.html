@@ -2,19 +2,20 @@
 <html lang="en" dir="ltr">
 
 <head>
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css" />
-  <script type="text/javascript" src="script.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
   <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="img/favicon.jpeg">
+  <link rel="icon" type="image/x-icon" href="img/home/New Icon.png">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>new WOW().init;</script>
   <title>weCocktail</title>
 </head>
@@ -22,30 +23,31 @@
 <body style="background-color: #eee;">
   <header class="header">
     <nav class="nav-bar-desktop">
-      <div id="logo"><a class="img-logo" href="index.html"><img src="img/New Icon.png" style="width: 55px;"></a></div>
-      <div><a class="menu-item" href="index.html">Home page</a></div>
-      <div><a class="menu-item" href="#">Alcohol type</a></div>
-      <div><a class="menu-item" href="recipes.html">Coktails recipes</a></div>
-      <div><a class="menu-item" href="shop.html">Accessories shop</a></div>
-      <div><a class="menu-item" href="course.html">Our courses</a></div>
+      <div id="logo"><a class="img-logo" href="home.html"><img src="img/home/New Icon.png" style="width: 55px;"></a>
+      </div>
+      <div><a class="menu-item" href="home.html">Home</a></div>
+      <div><a class="menu-item" href="alcohol.html">Alcohol</a></div>
+      <div><a class="menu-item" href="cocktails.html">Coktails</a></div>
+      <div><a class="menu-item" href="shop.html">Shop</a></div>
+      <div><a class="menu-item" href="courses.html">Courses</a></div>
     </nav>
     <nav class="nav-bar-mobile">
-      <div id="logo-mobile"><a class="img-logo" href="index.html"><img src="img/New Icon.png" style="width: 55px;"></a></div>
+      <div id="logo-mobile"><a class="img-logo" href="home.html"><img src="img/home/New Icon.png"
+            style="width: 55px;"></a>
+      </div>
       <i class="fa fa-bars" onclick="openHamburger()"></i>
-
     </nav>
     <div class="hamburger-menu">
       <ul>
-        <li><a class="menu-item" href="index.html">Home page</a></li>
-        <li><a class="menu-item" href="alcohols.html">Alcohol type</a></li>
-        <li><a class="menu-item" href="recipes.html">Cocktails recipes</a></li>
-        <li><a class="menu-item" href="shop.html">Accessories shop</a></li>
-        <li><a class="menu-item" href="course.html">Our courses</a></li>
+        <li><a class="menu-item" href="home.html">Home</a></li>
+        <li><a class="menu-item" href="alcohol.html">Alcohol</a></li>
+        <li><a class="menu-item" href="cocktails.html">Cocktails</a></li>
+        <li><a class="menu-item" href="shop.html">Shop</a></li>
+        <li><a class="menu-item" href="courses.html">Courses</a></li>
       </ul>
     </div>
-
     <div class="hero-image">
-      <img src="img/recipes/Hero.jpg">
+      <img src="img/cocktails/Hero.jpg">
     </div>
   </header>
 
@@ -53,15 +55,15 @@
     <!-- Tequila section -->
     <section>
       <div class="section-space"></div>
-      <div>
-        <img class="icon" src="./img/recipes/Icon.png" alt="Tequila Cocktails">
+      <div data-aos="fade-down">
+        <img class="icon" src="./img/cocktails/Icon.png" alt="Tequila Cocktails">
         <h1 class="alcoho_type">Tequila</h1>
       </div>
 
       <div class="flex-container">
-        <div class="card_recipe">
+        <div class="card_recipe" data-aos="fade-right">
           <div class="card__publication">
-            <img src="./img/recipes/Tequila/21st CENTURY.jpg">
+            <img src="./img/cocktails/Tequila/21st CENTURY.jpg">
           </div>
           <div class="card__info">
             <h2 class="card__title">21st CENTURY</h2>
@@ -83,9 +85,9 @@
           </div>
         </div>
 
-        <div class="card_recipe">
+        <div class="card_recipe"  data-aos="fade-left">
           <div class="card__publication">
-            <img src="./img/recipes/Tequila/EL DIABLO.jpg">
+            <img src="./img/cocktails/Tequila/EL DIABLO.jpg">
           </div>
           <div class="card__info">
             <h2 class="card__title">EL DIABLO</h2>
@@ -114,9 +116,9 @@
       </div>
 
       <div class="flex-container">
-        <div class="card_recipe">
+        <div class="card_recipe" data-aos="fade-right">
           <div class="card__publication">
-            <img src="./img/recipes/Tequila/MARGARITA.jpg">
+            <img src="./img/cocktails/Tequila/MARGARITA.jpg">
           </div>
           <div class="card__info">
             <h2 class="card__title">MARGARITA</h2>
@@ -139,9 +141,9 @@
           </div>
         </div>
 
-        <div class="card_recipe">
+        <div class="card_recipe" data-aos="fade-left">
           <div class="card__publication">
-            <img src="./img/recipes/Tequila/PALOMA.jpg">
+            <img src="./img/cocktails/Tequila/PALOMA.jpg">
           </div>
           <div class="card__info">
             <h2 class="card__title">PALOMA</h2>
@@ -169,15 +171,15 @@
     <!-- Gin section -->
     <section>
       <div class="section-space"></div>
-      <div>
-        <img class="icon" src="./img/recipes/Icon.png" alt="Gin Cocktails">
+      <div data-aos="fade-down">
+        <img class="icon" src="./img/cocktails/Icon.png" alt="Gin Cocktails">
         <h1 class="alcoho_type">Gin</h1>
       </div>
 
       <div class="flex-container">
-        <div class="card_recipe">
+        <div class="card_recipe" data-aos="fade-right">
           <div class="card__publication">
-            <img src="./img/recipes/Gin/ALASKA.jpg">
+            <img src="./img/cocktails/Gin/ALASKA.jpg">
           </div>
           <div class="card__info">
             <h2 class="card__title">ALASKA</h2>
@@ -199,9 +201,9 @@
           </div>
         </div>
 
-        <div class="card_recipe">
+        <div class="card_recipe" data-aos="fade-left">
           <div class="card__publication">
-            <img src="./img/recipes/Gin/BEE'S KNEES.jpg">
+            <img src="./img/cocktails/Gin/BEE'S KNEES.jpg">
           </div>
           <div class="card__info">
             <h2 class="card__title">BEE'S KNEES</h2>
@@ -225,9 +227,9 @@
       </div>
 
       <div class="flex-container">
-        <div class="card_recipe">
+        <div class="card_recipe" data-aos="fade-right">
           <div class="card__publication">
-            <img src="./img/recipes/Gin/BIJOU.jpg">
+            <img src="./img/cocktails/Gin/BIJOU.jpg">
           </div>
           <div class="card__info">
             <h2 class="card__title">BIJOU</h2>
@@ -249,9 +251,9 @@
           </div>
         </div>
 
-        <div class="card_recipe">
+        <div class="card_recipe" data-aos="fade-left">
           <div class="card__publication">
-            <img src="./img/recipes/Gin/BRAMBLE.jpg">
+            <img src="./img/cocktails/Gin/BRAMBLE.jpg">
           </div>
           <div class="card__info">
             <h2 class="card__title">BRAMBLE</h2>
@@ -282,15 +284,15 @@
     <!-- Rum section -->
     <section>
       <div class="section-space"></div>
-      <div>
-        <img class="icon" src="./img/recipes/Icon.png" alt="Rum Cocktails">
+      <div data-aos="fade-down">
+        <img class="icon" src="./img/cocktails/Icon.png" alt="Rum Cocktails">
         <h1 class="alcoho_type">Rum</h1>
       </div>
 
       <div class="flex-container">
-        <div class="card_recipe">
+        <div class="card_recipe" data-aos="fade-right">
           <div class="card__publication">
-            <img src="./img/recipes/Rum/AIRMAIL.jpg">
+            <img src="./img/cocktails/Rum/AIRMAIL.jpg">
           </div>
           <div class="card__info">
             <h2 class="card__title">AIRMAIL</h2>
@@ -316,9 +318,9 @@
           </div>
         </div>
 
-        <div class="card_recipe">
+        <div class="card_recipe" data-aos="fade-left">
           <div class="card__publication">
-            <img src="./img/recipes/Rum/CAIPIRINHA.jpg">
+            <img src="./img/cocktails/Rum/CAIPIRINHA.jpg">
           </div>
           <div class="card__info">
             <h2 class="card__title">CAIPIRINHA</h2>
@@ -342,9 +344,9 @@
       </div>
 
       <div class="flex-container">
-        <div class="card_recipe">
+        <div class="card_recipe" data-aos="fade-right">
           <div class="card__publication">
-            <img src="./img/recipes/Rum/CUBA LIBRE.jpg">
+            <img src="./img/cocktails/Rum/CUBA LIBRE.jpg">
           </div>
           <div class="card__info">
             <h2 class="card__title">CUBA LIBRE</h2>
@@ -362,9 +364,9 @@
           </div>
         </div>
 
-        <div class="card_recipe">
+        <div class="card_recipe" data-aos="fade-left">
           <div class="card__publication">
-            <img src="./img/recipes/Rum/DAIQUIRI.jpg">
+            <img src="./img/cocktails/Rum/DAIQUIRI.jpg">
           </div>
           <div class="card__info">
             <h2 class="card__title">DAIQUIRI</h2>
@@ -391,15 +393,15 @@
     <!-- Vodka section -->
     <section>
       <div class="section-space"></div>
-      <div>
-        <img class="icon" src="./img/recipes/Icon.png" alt="Vodka Cocktails">
+      <div data-aos="fade-down">
+        <img class="icon" src="./img/cocktails/Icon.png" alt="Vodka Cocktails">
         <h1 class="alcoho_type">Vodka</h1>
       </div>
 
       <div class="flex-container">
-        <div class="card_recipe">
+        <div class="card_recipe" data-aos="fade-right">
           <div class="card__publication">
-            <img src="./img/recipes/Vodka/BLACK RUSSIAN.jpg">
+            <img src="./img/cocktails/Vodka/BLACK RUSSIAN.jpg">
           </div>
           <div class="card__info">
             <h2 class="card__title">BLACK RUSSIAN</h2>
@@ -417,9 +419,9 @@
           </div>
         </div>
 
-        <div class="card_recipe">
+        <div class="card_recipe" data-aos="fade-left">
           <div class="card__publication">
-            <img src="./img/recipes/Vodka/BLOODY MARY.jpg">
+            <img src="./img/cocktails/Vodka/BLOODY MARY.jpg">
           </div>
           <div class="card__info">
             <h2 class="card__title">BLOODY MARY</h2>
@@ -445,9 +447,9 @@
       </div>
 
       <div class="flex-container">
-        <div class="card_recipe">
+        <div class="card_recipe" data-aos="fade-right">
           <div class="card__publication">
-            <img src="./img/recipes/Vodka/CAIPIROSKA.jpg">
+            <img src="./img/cocktails/Vodka/CAIPIROSKA.jpg">
           </div>
           <div class="card__info">
             <h2 class="card__title">CAIPIROSKA</h2>
@@ -469,9 +471,9 @@
           </div>
         </div>
 
-        <div class="card_recipe">
+        <div class="card_recipe" data-aos="fade-left">
           <div class="card__publication">
-            <img src="./img/recipes/Vodka/COSMOPOLITAN.jpg">
+            <img src="./img/cocktails/Vodka/COSMOPOLITAN.jpg">
           </div>
           <div class="card__info">
             <h2 class="card__title">COSMOPOLITAN</h2>
@@ -502,15 +504,15 @@
     <!-- Whiskey section -->
     <section>
       <div class="section-space"></div>
-      <div>
-        <img class="icon" src="./img/recipes/Icon.png" alt="Whiskey Cocktails">
+      <div data-aos="fade-down">
+        <img class="icon" src="./img/cocktails/Icon.png" alt="Whiskey Cocktails">
         <h1 class="alcoho_type">Whiskey</h1>
       </div>
 
       <div class="flex-container">
-        <div class="card_recipe">
+        <div class="card_recipe" data-aos="fade-right">
           <div class="card__publication">
-            <img src="./img/recipes/Whiskey/AFFINITY.jpg">
+            <img src="./img/cocktails/Whiskey/AFFINITY.jpg">
           </div>
           <div class="card__info">
             <h2 class="card__title">AFFINITY</h2>
@@ -536,9 +538,9 @@
           </div>
         </div>
 
-        <div class="card_recipe">
+        <div class="card_recipe" data-aos="fade-left">
           <div class="card__publication">
-            <img src="./img/recipes/Whiskey/ALGONQUIN.jpg">
+            <img src="./img/cocktails/Whiskey/ALGONQUIN.jpg">
           </div>
           <div class="card__info">
             <h2 class="card__title">ALGONQUIN</h2>
@@ -563,9 +565,9 @@
       </div>
 
       <div class="flex-container">
-        <div class="card_recipe">
+        <div class="card_recipe" data-aos="fade-right">
           <div class="card__publication">
-            <img src="./img/recipes/Whiskey/BLACKTHORN.jpg">
+            <img src="./img/cocktails/Whiskey/BLACKTHORN.jpg">
           </div>
           <div class="card__info">
             <h2 class="card__title">BLACKTHORN</h2>
@@ -591,9 +593,9 @@
           </div>
         </div>
 
-        <div class="card_recipe">
+        <div class="card_recipe" data-aos="fade-left">
           <div class="card__publication">
-            <img src="./img/recipes/Whiskey/BLINKER.jpg">
+            <img src="./img/cocktails/Whiskey/BLINKER.jpg">
           </div>
           <div class="card__info">
             <h2 class="card__title">BLINKER</h2>
@@ -620,15 +622,15 @@
     <!-- Other Spirits section -->
     <section>
       <div class="section-space"></div>
-      <div>
-        <img class="icon" src="./img/recipes/Icon.png" alt="Other Spirits Cocktails">
+      <div data-aos="fade-down">
+        <img class="icon" src="./img/cocktails/Icon.png" alt="Other Spirits Cocktails">
         <h1 class="alcoho_type">Other Spirits</h1>
       </div>
 
-      <div class="flex-container">
+      <div class="flex-container" data-aos="fade-right">
         <div class="card_recipe">
           <div class="card__publication">
-            <img src="./img/recipes/Other Spirits/ABSINTHE FRAPPE.jpg">
+            <img src="./img/cocktails/Other Spirits/ABSINTHE FRAPPE.jpg">
           </div>
           <div class="card__info">
             <h2 class="card__title">ABSINTHE FRAPPE</h2>
@@ -654,9 +656,9 @@
           </div>
         </div>
 
-        <div class="card_recipe">
+        <div class="card_recipe" data-aos="fade-left">
           <div class="card__publication">
-            <img src="./img/recipes/Other Spirits/AMERICANO.jpg">
+            <img src="./img/cocktails/Other Spirits/AMERICANO.jpg">
           </div>
           <div class="card__info">
             <h2 class="card__title">AMERICANO</h2>
@@ -681,9 +683,9 @@
       </div>
 
       <div class="flex-container">
-        <div class="card_recipe">
+        <div class="card_recipe" data-aos="fade-right">
           <div class="card__publication">
-            <img src="./img/recipes/Other Spirits/APEROL SPRITZ.jpg">
+            <img src="./img/cocktails/Other Spirits/APEROL SPRITZ.jpg">
           </div>
           <div class="card__info">
             <h2 class="card__title">APEROL SPRITZ</h2>
@@ -705,9 +707,9 @@
           </div>
         </div>
 
-        <div class="card_recipe">
+        <div class="card_recipe" data-aos="fade-left">
           <div class="card__publication">
-            <img src="./img/recipes/Other Spirits/CHAMPAGNE COCKTAIL.jpg">
+            <img src="./img/cocktails/Other Spirits/CHAMPAGNE COCKTAIL.jpg">
           </div>
           <div class="card__info">
             <h2 class="card__title">CHAMPAGNE COCKTAIL</h2>
@@ -731,13 +733,9 @@
       </div>
       <div class="section-space"></div>
     </section>
-
   </main>
 
-  <footer
-          class="text-center text-lg-start text-white"
-          style="background-color: #282828"
-  >
+  <footer class="text-center text-lg-start text-white" style="background-color: #282828">
     <!-- Grid container -->
     <div class="container p-4 pb-0">
       <!-- Section: Links -->
@@ -747,58 +745,52 @@
           <!-- Grid column -->
           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">
-              wecocktail
+              weCocktail
             </h6>
             <p>
-              <img src="img/New%20Icon.png" style="width: 45%">
+              <a class="text-white footer-link" href="home.html"><img src="img/home/New%20Icon.png"
+                  style="width: 35%"></a>
             </p>
           </div>
           <!-- Grid column -->
-
           <hr class="w-100 clearfix d-md-none" />
-
           <!-- Grid column -->
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
             <!-- <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6> -->
             <p>
-              <a class="text-white footer-link" href="alcohols.html">Alcohol types</a>
+              <a class="text-white footer-link" href="home.html">Home</a>
             </p>
             <p>
-              <a class="text-white footer-link" href="recipes.html">Cocktail recipes</a>
+              <a class="text-white footer-link" href="alcohol.html">Alcohol</a>
             </p>
             <p>
-              <a class="text-white footer-link" href="shop.html" >Accessories shop</a>
+              <a class="text-white footer-link" href="shop.html">Shop</a>
             </p>
             <p>
-              <a class="text-white footer-link" href="course.html">Our courses</a>
+              <a class="text-white footer-link" href="courses.html">Courses</a>
             </p>
           </div>
           <!-- Grid column -->
-
           <hr class="w-100 clearfix d-md-none" />
-
           <!-- Grid column -->
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
             <p><i class="footer-icon ri-map-pin-2-line"></i>Academic College Tel Aviv - Yafo, IL</p>
             <p><i class="ri-mail-line"></i> info@wecocktail.com</p>
-            <p><i class="ri-phone-line"></i> + 01 234 567 88</p>
-            <p><i class="ri-phone-line"></i> + 01 234 567 89</p>
+            <p><i class="ri-phone-line"></i> +972 501234567</p>
           </div>
           <!-- Grid column -->
         </div>
         <!--Grid row-->
       </section>
       <!-- Section: Links -->
-
       <hr class="my-3">
-
       <!-- Section: Copyright -->
       <section>
         <!-- Grid column -->
         <!-- Copyright -->
         <div class="row" style="justify-content: center; height: 50px; align-items: center;">
-          © 2023 Copyright: Oran, Gal & Or
+          © 2023 Copyright: Gal, Or & Oran
         </div>
         <!-- Copyright -->
       </section>
@@ -806,6 +798,7 @@
     </div>
     <!-- Grid container -->
   </footer>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

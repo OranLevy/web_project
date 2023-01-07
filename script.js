@@ -1,14 +1,14 @@
-function openHamburger(){
-    if($('.hamburger-menu').css('display') == 'none'){
+function openHamburger() {
+    if ($('.hamburger-menu').css('display') == 'none') {
         $('.hamburger-menu').show();
-    }else{
+    } else {
         $('.hamburger-menu').hide();
     }
 }
 //https://splidejs.com/
 document.addEventListener(
-    'DOMContentLoaded', function(){
-        new Splide('.splide',{
+    'DOMContentLoaded', function () {
+        new Splide('.splide', {
             type: 'loop',
             perPage: 3,
             focus: 'center',
@@ -28,3 +28,10 @@ document.addEventListener(
         }).mount()
     }
 )
+
+// Animation
+AOS.init({
+    duration: 1000,
+    once: true,
+    // delay: 400,
+});
