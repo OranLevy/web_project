@@ -360,7 +360,8 @@ h3 {
     font-weight: bold;
 }
 
-.prod-desc-txt, .prod-price {
+.prod-desc-txt,
+.prod-price {
     font-size: 12px;
     text-align: left;
 }
@@ -810,7 +811,7 @@ a:link {
 }
 
 .alcohol_img {
-    width: 25%;
+    width: 30%;
 }
 
 .alcohol_img img {
@@ -822,7 +823,7 @@ a:link {
 }
 
 .alcohol_info {
-    width: 75%;
+    width: 70%;
     margin: 20px;
 }
 
@@ -835,10 +836,10 @@ a:link {
 
 .alcohol_content {
     line-height: initial;
-    font-size: 18px;
+    font-size: 20px;
 }
 
-@media screen and (max-width: 1515px) {
+@media screen and (max-width: 1400px) {
     .alcohol_card {
         flex-direction: column;
         width: 50%;
