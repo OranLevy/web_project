@@ -20,7 +20,7 @@ function getProducts(){
             for(let i = 0; i < data.length; i++){
                 imgElems[i].innerHTML = data[i].image;
                 titleElems[i].innerHTML = data[i].name;
-                priceElems[i].innerHTML = data[i].price;
+                priceElems[i].innerHTML = data[i].price + '$';
                 descElems[i].innerHTML = data[i].description;
             }
         }
