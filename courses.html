@@ -54,7 +54,7 @@
         <h1 class="title">About Our Courses</h1>
       </div>
       <div>
-        <p class="content page-content">
+        <p class="content">
           We offer a number of courses in different scopes, at the end of which the participants will leave with skills
           that will allow them to integrate into jobs in the night life. The course staff even offers placement for
           certain jobs. At the end of each of the courses the participants will receive international certificates.
@@ -64,7 +64,7 @@
 
     <section>
       <div class="course-container" style="background-color: #edebeb;">
-        <div>
+        <div class="course-info-div">
           <div>
             <h1 class="course-title">Professional Bartending Course</h1>
           </div>
@@ -88,7 +88,7 @@
             </div>
           </div>
         </div>
-        <div class="center-img">
+        <div class="course-img-div">
           <img class="course-img" src="img/courses/bartender-istock.avif" alt="image">
         </div>
       </div>
@@ -96,10 +96,10 @@
 
     <section>
       <div class="course-container reverse">
-        <div class="center-img">
+        <div class="course-img-div">
           <img class="course-img" src="img/courses/Depositphotos_230894156_xl-2015-1024x681.jpg" alt="image">
         </div>
-        <div>
+        <div class="course-info-div">
           <div>
             <h1 class="course-title">Comprehensive Bartending Course</h1>
           </div>
@@ -132,7 +132,7 @@
 
     <section>
       <div class="course-container" style="background-color: #edebeb;">
-        <div>
+        <div class="course-info-div">
           <div>
             <h1 class="course-title">Online bartending course</h1>
           </div>
@@ -157,14 +157,14 @@
             </div>
           </div>
         </div>
-        <div class="center-img">
+        <div class="course-img-div">
           <img class="course-img" src="img/courses/1_J6FDzMxAeq90ix-oR0XTbQ.jpeg" alt="image">
         </div>
       </div>
     </section>
 
     <section style="margin-bottom: 20px;">
-      <div class="title">Who is it suitable for ?</div>
+      <div class="title" style="margin-top: 20px;">Who is it suitable for ?</div>
       <div class="suitable-for-container">
         <div>
           <div><img class="suitable-for-container-img" src="img/courses/course.png" alt="icon"></div>
@@ -189,12 +189,14 @@
     <section style="background-color: #edebeb;">
       <form action="mailto:galfo@mta.ac.il" method="post">
         <fieldset>
-          <div class="title" id="details" style="padding: 30px; margin-top: unset;">For more information leave details
+          <div class="title" id="details" style="padding: 20px; margin-top: unset;">For more information leave details
           </div>
           <div class="form-container">
             <div class="data-container">
               <div class="value">
-                <label>First Name</label>
+                <label>
+                  <p>First Name</p>
+                </label>
               </div>
               <div>
                 <input class="field" type="firstname" name="firstname">
@@ -202,7 +204,9 @@
             </div>
             <div class="data-container">
               <div class="value">
-                <label>Last Name</label>
+                <label>
+                  <p>Last Name</p>
+                </label>
               </div>
               <div>
                 <input class="field" type="lastname" name="lastname">
@@ -210,7 +214,9 @@
             </div>
             <div class="data-container">
               <div class="value">
-                <label>Phone</label>
+                <label>
+                  <p>Phone</p>
+                </label>
               </div>
               <div>
                 <input class="field" type="tel" name="phone">
@@ -218,7 +224,9 @@
             </div>
             <div class="data-container">
               <div class="value">
-                <label>Email</label>
+                <label>
+                  <p>Email</p>
+                </label>
               </div>
               <div>
                 <input class="field" type="email" name="email">
@@ -226,7 +234,9 @@
             </div>
             <div class="data-container">
               <div class="value">
-                <lable>Course</lable>
+                <lable>
+                  <p>Course</p>
+                </lable>
               </div>
               <div>
                 <select class="field" name="course;">
@@ -238,7 +248,7 @@
               </div>
             </div>
           </div>
-          <div style="display: flex; justify-content: center; padding: 30px;">
+          <div style="display: flex; justify-content: center; padding: 20px;">
             <input class="send-button" type="submit" value="Send">
           </div>
         </fieldset>
