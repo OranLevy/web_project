@@ -63,7 +63,7 @@ body {
     }
 
     .course-hp {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .prod-hp-img {
@@ -81,21 +81,6 @@ body {
     .prod-card {
         flex-direction: column;
     }
-}
-
-.footer {
-    background-color: #414141;
-    height: 68px;
-    width: 100%;
-    bottom: 0px;
-    margin-top: 30px;
-}
-
-.nav-bar-footer {
-    display: grid;
-    text-align: center;
-    width: 100%;
-    line-height: 68px;
 }
 
 .menu-item {
@@ -132,22 +117,6 @@ body {
     border-bottom: 1px solid white;
 }
 
-.space {
-    width: 2%;
-}
-
-.half-line {
-    width: 41%;
-}
-
-.line {
-    width: 41%;
-}
-
-.full-line {
-    width: 96%;
-}
-
 .title {
     width: 100%;
     text-align: center;
@@ -164,14 +133,6 @@ body {
     padding-bottom: 20px;
     padding-left: 40px;
     padding-right: 40px;
-}
-
-.clear-left {
-    clear: left;
-}
-
-.float-left {
-    float: left;
 }
 
 #logo-mobile {
@@ -206,10 +167,11 @@ body {
 
 .img-container img {
     /* transform: skew(0deg, -13deg); */
-    height: 195px;
+    height: 205px;
     /* margin: -35px 0px 0px -70px; */
     margin-right: -5px;
-    margin-top: 5px;
+    /*margin-top: 5px;*/
+    border-radius: 15px;
 }
 
 .inner-skew {
@@ -219,7 +181,7 @@ body {
     padding: 0px;
     font-size: 0px;
     margin: 30px 0px 0px 0px;
-    background: #282828;
+    /*background: #282828;*/
     height: 250px;
     width: 200px;
 }
@@ -235,14 +197,14 @@ body {
 }
 
 .text-container h3 {
-    margin: 20px 0px 10px 0px;
+    margin: 10px 0px 10px 0px;
     color: #282828;
     font-size: 18px;
 }
 
 #alcohol-cards-section {
     background: #edebeb;
-    height: 500px;
+    height: 620px;
 }
 
 #alcohol-cards-hp {
@@ -266,6 +228,7 @@ body {
 
 .course-image {
     border-radius: 10px;
+    margin-top: 40px;
 }
 
 .container {
@@ -333,7 +296,7 @@ h3 {
 .course-hp-txt {
     color: black;
     margin: auto;
-    padding: 30px;
+    /*padding: 30px;*/
 }
 
 .button-prod-hp {
@@ -683,6 +646,7 @@ h3 {
     width: 50%;
     text-align: center;
     box-shadow: 2px .8rem 1rem rgba(0, 0, 0, .025);
+    transform: translate(.5rem);
 }
 
 @media screen and (max-width: 1100px) {
@@ -746,7 +710,7 @@ h3 {
     }
 
     .course-img {
-        width: 75%;
+        width: 100%;
     }
 }
 
@@ -754,6 +718,162 @@ h3 {
     display: flex;
 }
 
-.footer-link{
+.footer-link {
     text-decoration: none;
+}
+
+.form-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.data-container {
+    display: flex;
+    gap: 10px;
+}
+
+.value {
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.field {
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border: solid 1px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1350px) {
+    .form-container {
+        flex-direction: column;
+    }
+
+    .data-container {
+        justify-content: center;
+    }
+
+    .value {
+        width: 100px;
+        text-align: left;
+    }
+
+    .field {
+        width: 200px;
+        text-align: left;
+        padding-left: 10px;
+    }
+}
+
+p1 {
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.link-color:hover {
+    background-color: #414141;
+}
+
+.send-button {
+    background-color: #282828;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 25%;
+    text-align: center;
+    box-shadow: 2px .8rem 1rem rgba(0, 0, 0, .025);
+    border: solid 1px;
+    font-size: 18px;
+}
+
+.send-button:hover {
+    background-color: #414141;
+}
+
+/* Alcohol types */
+.alcohol_card {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 25%);
+}
+
+.alcohol_img {
+    width: 25%;
+}
+
+.alcohol_img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.alcohol_info {
+    width: 75%;
+    margin: 20px;
+}
+
+.alcohol_title {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #414141;
+}
+
+.alcohol_content {
+    line-height: initial;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1515px) {
+    .alcohol_card {
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .alcohol_card div {
+        width: unset;
+    }
+
+    .alcohol_img img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: unset;
+    }
+
+    .alcohol_title {
+        font-size: 25px;
+    }
+
+    .alcohol_content {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .alcohol_card {
+        width: 75%;
+    }
+
+    .alcohol_title {
+        font-size: 20px;
+    }
+
+    .alcohol_content {
+        font-size: 14px;
+    }
 }
