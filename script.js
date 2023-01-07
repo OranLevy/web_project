@@ -11,11 +11,17 @@ function getProducts(){
     request.onreadystatechange = function(){
         if(request.readyState === 4 && request.status === 200){
             console.log(request);
-            // document.getElementById('error').innerHTML = request.responseText;
             let data = JSON.parse(request.responseText)
             console.log(data);
+            let imgElems = document.getElementsByClassName('prod-img');
+            let titleElems = document.getElementsByClassName('prod-title');
+            let priceElems = document.getElementsByClassName('prod-price');
+            let descElems = document.getElementsByClassName('prod-desc-txt');
             for(let i = 0; i < data.length; i++){
-                console.log(data[i]);
+                imgElems[i].innerHTML = data[i].image;
+                titleElems[i].innerHTML = data[i].name;
+                priceElems[i].innerHTML = data[i].price;
+                descElems[i].innerHTML = data[i].description;
             }
         }
     }
