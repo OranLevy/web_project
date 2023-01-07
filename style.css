@@ -83,21 +83,6 @@ body {
     }
 }
 
-.footer {
-    background-color: #414141;
-    height: 68px;
-    width: 100%;
-    bottom: 0px;
-    margin-top: 30px;
-}
-
-.nav-bar-footer {
-    display: grid;
-    text-align: center;
-    width: 100%;
-    line-height: 68px;
-}
-
 .menu-item {
     color: white;
     text-decoration: none;
@@ -132,22 +117,6 @@ body {
     border-bottom: 1px solid white;
 }
 
-.space {
-    width: 2%;
-}
-
-.half-line {
-    width: 41%;
-}
-
-.line {
-    width: 41%;
-}
-
-.full-line {
-    width: 96%;
-}
-
 .title {
     width: 100%;
     text-align: center;
@@ -164,14 +133,6 @@ body {
     padding-bottom: 20px;
     padding-left: 40px;
     padding-right: 40px;
-}
-
-.clear-left {
-    clear: left;
-}
-
-.float-left {
-    float: left;
 }
 
 #logo-mobile {
@@ -867,7 +828,8 @@ a:link {
 }
 
 .alcohol_content {
-    font-size: 20px;
+    line-height: initial;
+    font-size: 18px;
 }
 
 @media screen and (max-width: 1400px) {
