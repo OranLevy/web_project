@@ -325,7 +325,7 @@ h3 {
 .products {
     display: flex;
     color: black;
-    gap: 100px;
+    gap: 20px;
     width: 85%;
     margin: auto;
     padding: 20px;
@@ -336,17 +336,18 @@ h3 {
     width: 100%;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    height: 200px;
 }
 
 .prod-img {
     height: 100%;
-    width: 45%;
-    background: radial-gradient(circle at top 50% right 33%, #646262 0%, #1a1a1a 100%);
+    width: 100%;
+    /*background: radial-gradient(circle at top 50% right 33%, #646262 0%, #1a1a1a 100%);*/
     border-radius: 10px;
 }
 
 .prod-desc {
-    width: 55%;
+    width: 100%;
     margin: auto;
     padding: 20px;
 }
@@ -359,8 +360,13 @@ h3 {
     font-weight: bold;
 }
 
-.prod-desc-txt {
+.prod-desc-txt, .prod-price {
     font-size: 12px;
+    text-align: left;
+}
+
+.prod-title {
+    font-size: 17px;
 }
 
 /* recipes section */
