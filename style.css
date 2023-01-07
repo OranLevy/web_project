@@ -804,7 +804,7 @@ a:link {
 }
 
 .alcohol_img {
-    width: 30%;
+    width: 25%;
 }
 
 .alcohol_img img {
@@ -816,7 +816,7 @@ a:link {
 }
 
 .alcohol_info {
-    width: 70%;
+    width: 75%;
     margin: 20px;
 }
 
@@ -832,7 +832,7 @@ a:link {
     font-size: 18px;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1515px) {
     .alcohol_card {
         flex-direction: column;
         width: 50%;
