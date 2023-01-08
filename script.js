@@ -65,6 +65,7 @@ $(document).ready(function(){
         slidesPerView: 'auto',
         spaceBetween: 150,
         centeredSlides: true,
+        simulateTouch: true,
         autoplay: {
             delay: 4000,
             disableOnInteraction: false,
