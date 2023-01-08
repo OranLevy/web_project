@@ -187,9 +187,10 @@
 
     <!-- Add validations -->
     <section style="background-color: #edebeb;">
-      <form action="mailto:galfo@mta.ac.il" method="post">
+      <form action="" method="post">
         <fieldset>
-          <div class="title" id="details" style="padding: 20px; margin-top: unset;">For more information leave details
+          <div class="title" id="details" name="myForm" method="post" style="padding: 20px; margin-top: unset;">For more
+            information leave details
           </div>
           <div class="form-container">
             <div class="data-container">
@@ -249,7 +250,7 @@
             </div>
           </div>
           <div style="display: flex; justify-content: center; padding: 20px;">
-            <input class="send-button" type="submit" value="Send">
+            <input class="send-button" type="submit" value="send" onclick="return validateForm()">
           </div>
         </fieldset>
       </form>
