@@ -87,7 +87,7 @@ function validateForm() {
         alert("First name must be filled out");
         return false;
     }
-    if (!firstname.match(/[A-Za-z]/)) {
+    if (!firstname.match(/[A-Za-z\u0590-\u05FF]/)) {
         alert("First name must contain letters only");
         return false;
     }
@@ -96,7 +96,7 @@ function validateForm() {
         alert("Last name must be filled out");
         return false;
     }
-    if (!lastname.match(/[A-Za-z]/)) {
+    if (!lastname.match(/[A-Za-z\u0590-\u05fe]/)) {
         alert("Last name must contain letters only");
         return false;
     }

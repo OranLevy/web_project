@@ -80,10 +80,6 @@ main {
         width: 100%;
     }
 
-    .products {
-        flex-direction: column;
-    }
-
     .prod-card {
         flex-direction: column;
     }
@@ -215,7 +211,7 @@ main {
     border-radius: 20px;
     background: #fff;
     margin: -120px 0px 0px 0px;
-    line-height: 19px;
+    line-height: 20px;
     font-size: 14px;
 }
 
@@ -346,29 +342,31 @@ h3 {
     background: #edebeb;
 }
 
-
 .products {
     display: flex;
     color: black;
     gap: 20px;
-    width: 85%;
+    width: 80%;
     margin: auto;
     padding: 20px;
+    padding-bottom: unset;
 }
 
 .prod-card {
     display: flex;
+    flex-direction: row-reverse;
     width: 100%;
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 25%);
     border-radius: 10px;
     height: auto;
+    background-color: white;
 }
 
 .prod-img {
     border-radius: 10px;
     margin: auto;
     padding: 15px;
-    width: 50%;
+    width: 40%;
 }
 
 .prod-img img {
@@ -376,32 +374,47 @@ h3 {
 }
 
 .prod-desc {
-    width: 100%;
-    margin: auto;
-    padding: 10px;
+    width: 60%;
+    padding-top: 20px;
 }
 
 .prod-desc-txt {
-    font-size: 12px;
+    font-size: 16px;
     text-align: left;
     padding: 20px;
-}
-
-.prod-btn {
-    width: 150px;
-    height: 40px;
-    border-radius: 15px;
-    border: 1px;
-    font-weight: bold;
+    padding-top: unset;
+    margin-bottom: unset;
+    /* height: 120px; */
 }
 
 .prod-price {
-    font-size: 12px;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-top: 10px;
     text-align: left;
+    font-weight: bold;
 }
 
 .prod-title {
-    font-size: 20px;
+    font-size: 24px;
+    color: #282828;
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: unset;
+    padding-bottom: 10px;
+}
+
+.select-button {
+    background-color: #282828;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 25%);
+    border: solid 1px #282828;
+    font-size: 16px;
+    margin-bottom: 20px;
 }
 
 h {
@@ -450,6 +463,10 @@ p3 {
     p3 {
         font-size: 16px;
     }
+
+    .products {
+        flex-direction: column-reverse;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -485,6 +502,34 @@ p3 {
 
     p3 {
         font-size: 14px;
+    }
+
+    .products {
+        width: 90%;
+    }
+
+    .prod-card {
+        flex-direction: column-reverse;
+    }
+
+    .prod-desc {
+        width: unset;
+    }
+
+    .prod-title {
+        text-align: center;
+    }
+
+    .prod-price {
+        text-align: center;
+    }
+
+    .prod-desc-txt {
+        text-align: center;
+    }
+
+    .prod-img {
+        width: 50%;
     }
 }
 
