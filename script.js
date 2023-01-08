@@ -1,5 +1,5 @@
 function openHamburger() {
-    if ($('.hamburger-menu').css('display') == 'none') {
+    if ($('.hamburger-menu').css('display') === 'none') {
         $('.hamburger-menu').show();
     } else {
         $('.hamburger-menu').hide();
@@ -66,6 +66,8 @@ $(document).ready(function(){
         spaceBetween: 150,
         centeredSlides: true,
         simulateTouch: true,
+        touchEventsTarget: true,
+        touchReleaseOnEdges: true,
         autoplay: {
             delay: 4000,
             disableOnInteraction: false,
@@ -84,12 +86,12 @@ AOS.init({
 
 function validateForm() {
     let firstname = document.forms["myForm"]["firstname"].value;
-    if (firstname == "") {
+    if (firstname === "") {
         alert("First name must be filled out");
         return false;
     }
     let lastname = document.forms["myForm"]["lastname"].value;
-    if (lastname == "") {
+    if (lastname === "") {
         alert("Last name must be filled out");
         return false;
     }
@@ -105,7 +107,7 @@ function validateForm() {
         return false;
     }
     let course = document.forms["myForm"]["course"].value;
-    if (course == "") {
+    if (course === "") {
         alert("Please choose one of the options");
         return false;
     }
