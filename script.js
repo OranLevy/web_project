@@ -13,12 +13,13 @@ function getProducts() {
             console.log(request);
             let data = JSON.parse(request.responseText)
             console.log(data);
-            let imgElems = document.getElementsByClassName('prod-img');
+            let imgElems = document.querySelectorAll('.prod-img img');
             let titleElems = document.getElementsByClassName('prod-title');
             let priceElems = document.getElementsByClassName('prod-price');
             let descElems = document.getElementsByClassName('prod-desc-txt');
             for (let i = 0; i < data.length; i++) {
-                imgElems[i].innerHTML = data[i].image;
+                console.log(imgElems[i])
+                imgElems[i].setAttribute('src', data[i].image);
                 titleElems[i].innerHTML = data[i].name;
                 priceElems[i].innerHTML = data[i].price + '$';
                 descElems[i].innerHTML = data[i].description;
