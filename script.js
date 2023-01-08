@@ -24,6 +24,7 @@ function getProducts(){
                 priceElems[i].innerHTML = data[i].price + '$';
                 descElems[i].innerHTML = data[i].description;
             }
+            fixWidthImg();
         }
     }
     request.open('POST', 'shop.php', true);
