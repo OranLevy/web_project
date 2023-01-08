@@ -133,8 +133,8 @@ body {
     font-size: 18px;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
     margin: unset;
 }
 
@@ -422,6 +422,8 @@ h {
 
     .content {
         font-size: 14px;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     .alcohol-title {
@@ -839,6 +841,11 @@ p1 {
         margin-top: auto;
         margin-bottom: auto;
     }
+
+    .course-info-div {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }
 
 .footer-link {
@@ -943,7 +950,7 @@ a:link {
     margin-top: auto;
     margin-bottom: auto;
     padding: 30px;
-    padding-left: 10px;
+    padding-left: unset;
 }
 
 .alcohol_title {
@@ -973,8 +980,8 @@ a:link {
     .alcohol_info {
         padding: unset;
         padding-top: 20px;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
         text-align: center;
     }
 
