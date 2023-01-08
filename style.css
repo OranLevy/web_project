@@ -319,7 +319,7 @@ h3 {
     background: #edebeb;
 }
 
-
+/* Shop page */
 .products {
     display: flex;
     color: black;
@@ -334,19 +334,25 @@ h3 {
     width: 100%;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    height: 200px;
+    height: 280px;
+    background: white;
 }
 
 .prod-img {
-    height: 100%;
-    width: 100%;
     border-radius: 10px;
+    margin: auto;
+    padding: 15px;
+    width: 50%;
+}
+
+.prod-img img {
+    width: 100%;
 }
 
 .prod-desc {
-    width: 100%;
+    width: 50%;
     margin: auto;
-    padding: 20px;
+    padding: 5px;
 }
 
 .prod-btn {
