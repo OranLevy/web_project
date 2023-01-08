@@ -47,29 +47,30 @@ function fixWidthImg(){
         }
     }
 }
-//https://splidejs.com/
-document.addEventListener(
-    'DOMContentLoaded', function () {
-        new Splide('.splide', {
-            type: 'loop',
-            perPage: 3,
-            focus: 'center',
-            autoplay: true,
-            interval: 5000,
-            pagination: false,
-            padding: '10%',
-            // throttle: 300,
-            drag: 'free',
-            // direction: 'rtl',
-            breakpoints: {
-                1000: {
-                    perPage: 1,
-                    padding: '15%'
-                }
-            }
-        }).mount()
-    }
-)
+
+// https://swiperjs.com/get-started
+$(document).ready(function(){
+    new Swiper('.swiper', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        loop: true,
+        loopedSlides: 10,
+        slidesPerView: 'auto',
+        spaceBetween: 150,
+        centeredSlides: true,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+
+    })
+})
 
 // Animation
 AOS.init({

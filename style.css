@@ -153,6 +153,21 @@ body {
     text-align: center;
     transition: transform .2s;
 }
+/* Carousel adjustments */
+.swiper-slide {
+    width: 240px !important;
+}
+.swiper{
+    height: 550px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #282828 !important;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: #282828 !important;
+}
 
 .a-box:hover {
     transform: scale(1.1);
