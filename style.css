@@ -49,6 +49,7 @@ body {
 
     #alcohol-cards-hp {
         flex-direction: column;
+        height: 70%;
     }
 
     .text-intro-hp {
@@ -124,6 +125,7 @@ body {
     font-size: 26px;
     font-weight: bold;
     margin-top: 20px;
+    color: #282828;
 }
 
 .content {
@@ -184,7 +186,7 @@ body {
 }
 
 .text-container {
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 25%);
     padding: 120px 20px 20px 20px;
     border-radius: 20px;
     background: #fff;
@@ -201,7 +203,7 @@ body {
 
 #alcohol-cards-section {
     background: #edebeb;
-    height: 620px;
+    height: 500px;
 }
 
 #alcohol-cards-hp {
@@ -237,6 +239,7 @@ body {
     text-align: center;
     font-size: 26px;
     margin: 0;
+    color: #282828;
 }
 
 .products-hp-row {
@@ -301,7 +304,7 @@ h3 {
     background-color: #282828;
     color: white;
     border-radius: 10px;
-    box-shadow: 9px 10px 35px 10px rgb(0 0 0 / 30%);
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 25%);
     border: 1px;
     font-weight: bold;
     font-size: 18px;
@@ -319,7 +322,7 @@ h3 {
     background: #edebeb;
 }
 
-/* Shop page */
+
 .products {
     display: flex;
     color: black;
@@ -332,27 +335,21 @@ h3 {
 .prod-card {
     display: flex;
     width: 100%;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 25%);
     border-radius: 10px;
-    height: 280px;
-    background: white;
+    height: 200px;
 }
 
 .prod-img {
-    border-radius: 10px;
-    margin: auto;
-    padding: 15px;
-    width: 50%;
-}
-
-.prod-img img {
+    height: 100%;
     width: 100%;
+    border-radius: 10px;
 }
 
 .prod-desc {
-    width: 50%;
+    width: 100%;
     margin: auto;
-    padding: 5px;
+    padding: 20px;
 }
 
 .prod-btn {
@@ -461,7 +458,7 @@ h {
 
 
 .card_recipe {
-    box-shadow: 2px .8rem 1rem rgba(0, 0, 0, .025);
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 25%);
     margin: auto;
     background-color: white;
     border-radius: 10px;
@@ -521,7 +518,7 @@ h {
     direction: ltr;
     text-align: left;
     font-size: 24px;
-    color: #414141;
+    color: #282828;
 }
 
 .card__subtitle {
@@ -541,7 +538,7 @@ h {
     display: inline-block;
     text-decoration: none;
     font-weight: bold;
-    color: #414141;
+    color: #282828;
     margin-top: 2rem;
 }
 
@@ -587,29 +584,26 @@ h {
     direction: ltr;
     display: flex;
     order: 2;
-    color: #414141;
     padding-bottom: 1px;
     margin-bottom: unset;
     line-height: unset;
 }
 
 .measurement {
-    color: #414141;
     font-size: 16px;
     width: 35%;
 }
 
 .ingredient {
-
-    color: #414141;
     font-size: 16px;
     width: 100%;
 }
 
-.alcoho_type {
+.alcohol_type {
     text-align: center;
     font-size: 20px;
     margin-top: 5px;
+    font-weight: bold;
 }
 
 .icon {
@@ -707,6 +701,7 @@ h {
     font-size: 26px;
     font-weight: bold;
     padding-left: 20px;
+    color: #282828;
 }
 
 .course-content {
@@ -904,7 +899,7 @@ a:link {
 }
 
 .link-color:hover {
-    background-color: #414141;
+    background-color: #282828;
 }
 
 .send-button {
@@ -914,13 +909,13 @@ a:link {
     padding: 10px;
     width: 25%;
     text-align: center;
-    box-shadow: 2px .8rem 1rem rgba(0, 0, 0, .025);
-    border: solid 1px;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 25%);
+    border: solid 1px #282828;
     font-size: 16px;
 }
 
 .send-button:hover {
-    background-color: #414141;
+    background-color: #282828;
 }
 
 /* Alcohol */
@@ -955,7 +950,7 @@ a:link {
     margin-bottom: 10px;
     font-size: 26px;
     font-weight: bold;
-    color: #414141;
+    color: #282828;
 }
 
 .alcohol_content {
