@@ -175,9 +175,14 @@ main {
     color: #282828 !important;
 }
 
-.a-box:hover {
-    transform: scale(1.1);
+@media screen and (min-width: 1000px) {
+    .a-box:hover {
+        transform: scale(1.1);
+    }
 }
+
+
+
 
 .img-container {
     height: 230px;
