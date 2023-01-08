@@ -118,11 +118,11 @@ function validateForm() {
         alert("You have entered an invalid email address");
         return false;
     }
-    // let course = document.forms["myForm"]["course"].value;
-    // if (course == "Select") {
-    //     alert("Please select a course");
-    //     return false;
-    // }
+    let course = document.getElementById('course-dropdown').value;
+    if (course == "Select") {
+        alert("Please select a course");
+        return false;
+    }
     alert("Your details have been sent successfully!");
     return true;
 }
