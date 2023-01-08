@@ -33,16 +33,16 @@ function getProducts() {
 }
 
 
-function fixWidthImg(){
+function fixWidthImg() {
     let imgElems = document.querySelectorAll('.prod-img img');
-    for(let i = 0; i < imgElems.length; i++){
-        if(imgElems[i].hasAttribute('src')){
+    for (let i = 0; i < imgElems.length; i++) {
+        if (imgElems[i].hasAttribute('src')) {
             let attr = imgElems[i].getAttribute('src');
             console.log(attr);
-            if(attr.includes('jigger')){
+            if (attr.includes('jigger')) {
                 imgElems[i].style.width = '50%';
             }
-            if(attr.includes('pourer')){
+            if (attr.includes('pourer')) {
                 imgElems[i].style.width = '35%';
             }
         }
@@ -50,7 +50,7 @@ function fixWidthImg(){
 }
 
 // https://swiperjs.com/get-started
-$(document).ready(function(){
+$(document).ready(function () {
     new Swiper('.swiper', {
         navigation: {
             nextEl: '.swiper-button-next',

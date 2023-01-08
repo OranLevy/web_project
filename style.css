@@ -135,7 +135,7 @@ main {
 .content {
     text-align: center;
     font-size: 18px;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 20px;
     padding-left: 10%;
     padding-right: 10%;
@@ -159,19 +159,22 @@ main {
     text-align: center;
     transition: transform .2s;
 }
+
 /* Carousel adjustments */
 .swiper-slide {
     width: 240px !important;
 }
-.swiper{
-    height: 550px;
+
+.swiper {
+    height: 450px;
 }
 
 .swiper-pagination-bullet-active {
     background-color: #282828 !important;
 }
 
-.swiper-button-next, .swiper-button-prev{
+.swiper-button-next,
+.swiper-button-prev {
     color: #282828 !important;
 }
 
@@ -180,9 +183,6 @@ main {
         transform: scale(1.1);
     }
 }
-
-
-
 
 .img-container {
     height: 230px;
@@ -227,7 +227,7 @@ main {
 
 #alcohol-cards-section {
     background: #edebeb;
-    height: 620px;
+    height: 530px;
 }
 
 #alcohol-cards-hp {
@@ -414,7 +414,7 @@ h {
 
 /* End Shop page */
 
-.p3 {
+p3 {
     font-size: 18px;
 }
 
@@ -447,7 +447,7 @@ h {
         font-size: 20px;
     }
 
-    .p3 {
+    p3 {
         font-size: 16px;
     }
 }
@@ -483,7 +483,7 @@ h {
         font-size: 18px;
     }
 
-    .p3 {
+    p3 {
         font-size: 14px;
     }
 }
