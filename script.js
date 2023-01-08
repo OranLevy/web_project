@@ -6,20 +6,19 @@ function openHamburger() {
     }
 }
 
-function getProducts(){
+function getProducts() {
     let request = new XMLHttpRequest();
-    request.onreadystatechange = function(){
-        if(request.readyState === 4 && request.status === 200){
+    request.onreadystatechange = function () {
+        if (request.readyState === 4 && request.status === 200) {
             console.log(request);
             let data = JSON.parse(request.responseText)
             console.log(data);
-            let imgElems = document.querySelectorAll('.prod-img img');
+            let imgElems = document.getElementsByClassName('prod-img');
             let titleElems = document.getElementsByClassName('prod-title');
             let priceElems = document.getElementsByClassName('prod-price');
             let descElems = document.getElementsByClassName('prod-desc-txt');
-            for(let i = 0; i < data.length; i++){
-                console.log(imgElems[i]);
-                imgElems[i].setAttribute('src', data[i].image);
+            for (let i = 0; i < data.length; i++) {
+                imgElems[i].innerHTML = data[i].image;
                 titleElems[i].innerHTML = data[i].name;
                 priceElems[i].innerHTML = data[i].price + '$';
                 descElems[i].innerHTML = data[i].description;
@@ -31,6 +30,7 @@ function getProducts(){
     request.setRequestHeader('Content-type', 'application/json');
     request.send();
 }
+
 
 function fixWidthImg(){
     let imgElems = document.querySelectorAll('.prod-img img');
@@ -72,9 +72,40 @@ $(document).ready(function(){
     })
 })
 
+
 // Animation
 AOS.init({
     duration: 1400,
     once: true,
     // delay: 400,
 });
+
+function validateForm() {
+    let firstname = document.forms["myForm"]["firstname"].value;
+    if (firstname == "") {
+        alert("First name must be filled out");
+        return false;
+    }
+    let lastname = document.forms["myForm"]["lastname"].value;
+    if (lastname == "") {
+        alert("Last name must be filled out");
+        return false;
+    }
+    let phone = document.forms["myForm"]["phone"].value;
+    var phoneno = /^\d{10}$/;
+    if (!phone.match(phoneno)) {
+        alert("Phone number should contain 10 digits");
+        return false;
+    }
+    let email = document.forms["myForm"]["email"].value;
+    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+        alert("You have entered an invalid email address");
+        return false;
+    }
+    let course = document.forms["myForm"]["course"].value;
+    if (course == "") {
+        alert("Please choose one of the options");
+        return false;
+    }
+    return true;
+}
