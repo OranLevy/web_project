@@ -87,26 +87,42 @@ function validateForm() {
         alert("First name must be filled out");
         return false;
     }
+    if (!firstname.match(/[A-Za-z]/)) {
+        alert("First name must contain letters only");
+        return false;
+    }
     let lastname = document.forms["myForm"]["lastname"].value;
     if (lastname == "") {
         alert("Last name must be filled out");
         return false;
     }
+    if (!lastname.match(/[A-Za-z]/)) {
+        alert("Last name must contain letters only");
+        return false;
+    }
     let phone = document.forms["myForm"]["phone"].value;
-    var phoneno = /^\d{10}$/;
-    if (!phone.match(phoneno)) {
-        alert("Phone number should contain 10 digits");
+    if (phone == "") {
+        alert("Phone number must be filled out");
+        return false;
+    }
+    if (!phone.match(/^\d{10}$/)) {
+        alert("Phone number must contain 10 digits");
         return false;
     }
     let email = document.forms["myForm"]["email"].value;
-    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+    if (email == "") {
+        alert("Email address must be filled out");
+        return false;
+    }
+    if (!email.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
         alert("You have entered an invalid email address");
         return false;
     }
-    let course = document.forms["myForm"]["course"].value;
-    if (course == "") {
-        alert("Please choose one of the options");
-        return false;
-    }
+    // let course = document.forms["myForm"]["course"].value;
+    // if (course == "Select") {
+    //     alert("Please select a course");
+    //     return false;
+    // }
+    alert("Your details have been sent successfully!");
     return true;
 }
