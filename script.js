@@ -75,7 +75,7 @@ $(document).ready(function(){
 
 // Animation
 AOS.init({
-    duration: 1000,
+    duration: 1400,
     once: true,
     // delay: 400,
 });
