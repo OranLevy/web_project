@@ -13,49 +13,70 @@ function getProducts() {
             console.log(request);
             let data = JSON.parse(request.responseText)
             console.log(data);
-            let imgElems = document.getElementsByClassName('prod-img');
+            let imgElems = document.querySelectorAll('.prod-img img');
             let titleElems = document.getElementsByClassName('prod-title');
             let priceElems = document.getElementsByClassName('prod-price');
             let descElems = document.getElementsByClassName('prod-desc-txt');
             for (let i = 0; i < data.length; i++) {
-                imgElems[i].innerHTML = data[i].image;
+                console.log(imgElems[i])
+                imgElems[i].setAttribute('src', data[i].image);
                 titleElems[i].innerHTML = data[i].name;
                 priceElems[i].innerHTML = data[i].price + '$';
                 descElems[i].innerHTML = data[i].description;
             }
+            fixWidthImg();
         }
     }
     request.open('POST', 'shop.php', true);
     request.setRequestHeader('Content-type', 'application/json');
     request.send();
 }
-//https://splidejs.com/
-document.addEventListener(
-    'DOMContentLoaded', function () {
-        new Splide('.splide', {
-            type: 'loop',
-            perPage: 3,
-            focus: 'center',
-            autoplay: true,
-            interval: 5000,
-            pagination: false,
-            padding: '10%',
-            // throttle: 300,
-            drag: 'free',
-            // direction: 'rtl',
-            breakpoints: {
-                1000: {
-                    perPage: 1,
-                    padding: '15%'
-                }
+
+
+function fixWidthImg(){
+    let imgElems = document.querySelectorAll('.prod-img img');
+    for(let i = 0; i < imgElems.length; i++){
+        if(imgElems[i].hasAttribute('src')){
+            let attr = imgElems[i].getAttribute('src');
+            console.log(attr);
+            if(attr.includes('jigger')){
+                imgElems[i].style.width = '50%';
             }
-        }).mount()
+            if(attr.includes('pourer')){
+                imgElems[i].style.width = '35%';
+            }
+        }
     }
-)
+}
+
+// https://swiperjs.com/get-started
+$(document).ready(function(){
+    new Swiper('.swiper', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        loop: true,
+        loopedSlides: 10,
+        slidesPerView: 'auto',
+        spaceBetween: 150,
+        centeredSlides: true,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+
+    })
+})
+
 
 // Animation
 AOS.init({
-    duration: 1000,
+    duration: 1400,
     once: true,
     // delay: 400,
 });

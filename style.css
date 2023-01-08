@@ -4,6 +4,10 @@ body {
     font-family: 'Rubik';
 }
 
+main {
+    overflow-x: hidden;
+}
+
 .nav-bar-desktop {
     display: flex;
     width: 100%;
@@ -141,7 +145,7 @@ body {
 #logo-mobile {
     width: 100%;
     text-align: center;
-    margin-left: 50px;
+    margin-left: 60px;
     margin-top: 5px;
 }
 
@@ -155,10 +159,30 @@ body {
     text-align: center;
     transition: transform .2s;
 }
-
-.a-box:hover {
-    transform: scale(1.1);
+/* Carousel adjustments */
+.swiper-slide {
+    width: 240px !important;
 }
+.swiper{
+    height: 550px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #282828 !important;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: #282828 !important;
+}
+
+@media screen and (min-width: 1000px) {
+    .a-box:hover {
+        transform: scale(1.1);
+    }
+}
+
+
+
 
 .img-container {
     height: 230px;
@@ -203,7 +227,7 @@ body {
 
 #alcohol-cards-section {
     background: #edebeb;
-    height: 500px;
+    height: 620px;
 }
 
 #alcohol-cards-hp {
@@ -295,7 +319,7 @@ h3 {
 .course-hp-txt {
     color: black;
     margin: auto;
-    padding: 20px;
+    padding-bottom: 20px;
 }
 
 .button-prod-hp {
@@ -337,18 +361,29 @@ h3 {
     width: 100%;
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 25%);
     border-radius: 10px;
-    height: 200px;
+    height: auto;
 }
 
 .prod-img {
-    height: 100%;
-    width: 100%;
     border-radius: 10px;
+    margin: auto;
+    padding: 15px;
+    width: 50%;
+}
+
+.prod-img img {
+    width: 100%;
 }
 
 .prod-desc {
     width: 100%;
     margin: auto;
+    padding: 10px;
+}
+
+.prod-desc-txt {
+    font-size: 12px;
+    text-align: left;
     padding: 20px;
 }
 
@@ -366,7 +401,7 @@ h3 {
 }
 
 .prod-title {
-    font-size: 17px;
+    font-size: 20px;
 }
 
 h {
@@ -376,6 +411,8 @@ h {
 .prod-hp-txt {
     font-size: 18px;
 }
+
+/* End Shop page */
 
 .p3 {
     font-size: 18px;
@@ -468,7 +505,7 @@ h {
 
 .card__publication {
     position: relative;
-    height: 30rem;
+    height: 15rem;
     overflow: hidden;
     background-color: #fff;
     border-top-left-radius: 10px;
@@ -616,9 +653,6 @@ h {
     height: 100px;
     width: 100px;
     padding-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    /* margin-top: 20px; */
 }
 
 .flex-container {

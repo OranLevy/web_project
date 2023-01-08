@@ -7,15 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
-  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="img/index/New Icon.png">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <title>weCocktail</title>
 </head>
 
@@ -68,243 +66,219 @@
       </div>
     </section>
 
-    <section class="splide" id="alcohol-cards-section" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+    <section id="alcohol-cards-section" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
       data-aos-offset="300">
       <br>
       <h1 class="alcohol-title">Alcohol types</h1>
-      <div class="splide__track" id="alcohol-cards-hp">
-        <ul class="splide__list" id="alcohol-cards-list">
+      <br>
+      <div class="swiper">
+        <div class="swiper-wrapper">
           <!-- Tequila -->
-          <li class="splide__slide">
-            <a href="alcohol.html#tequila">
-              <div class="a-box splide__slide__container">
-                <div class="img-container">
-                  <div class="img-inner">
-                    <div class="inner-skew">
-                      <img src="img/alcohol/tequila.JPG" style="margin-right: -5px;">
-                    </div>
-                  </div>
-                </div>
-                <div class="text-container">
-                  <h3>Tequila</h3>
-                  <div style="color: black;">
-                    Tequila is a distilled alcoholic beverage from the white liquor family, produced exclusively in...
-                  </div>
+          <div class="a-box swiper-slide">
+            <div class="img-container">
+              <div class="img-inner">
+                <div class="inner-skew">
+                  <img src="img/alcohol/tequila.JPG" style="margin-right: -5px;">
                 </div>
               </div>
-            </a>
-          </li>
+            </div>
+            <div class="text-container">
+              <h3>Tequila</h3>
+              <div style="color: black;">
+                Tequila is a distilled alcoholic beverage from the white liquor family, produced exclusively in
+                specific areas in five states in Mexico, mainly around the city of Tequila, in the state of Jalisco
+                in Mexico...
+              </div>
+            </div>
+          </div>
           <!-- Gin -->
-          <li class="splide__slide">
-            <a href="alcohol.html#gin">
-              <div class="a-box splide__slide__container">
-                <div class="img-container">
-                  <div class="img-inner">
-                    <div class="inner-skew">
-                      <img src="img/alcohol/gin.JPG">
-                    </div>
-                  </div>
-                </div>
-                <div class="text-container">
-                  <h3>Gin</h3>
-                  <div style="color: black;">
-                    Gin is considered a difficult drink to drink, due to its very high alcoholic strength and very
-                    dry...
-                  </div>
+          <div class="a-box swiper-slide">
+            <div class="img-container">
+              <div class="img-inner">
+                <div class="inner-skew">
+                  <img src="img/alcohol/gin.JPG">
                 </div>
               </div>
-            </a>
-          </li>
+            </div>
+            <div class="text-container">
+              <h3>Gin</h3>
+              <div style="color: black;">
+                Gin is considered a difficult drink to drink, due to its very high alcoholic strength and very dry
+                taste, so it is very rare to see people drinking it without mixing it with any other liquid, unlike
+                other spirits such as tequila and vodka...
+              </div>
+            </div>
+          </div>
           <!-- Rum -->
-          <li class="splide__slide">
-            <a href="alcohol.html#rum">
-              <div class="a-box splide__slide__container">
-                <div class="img-container">
-                  <div class="img-inner">
-                    <div class="inner-skew">
-                      <img src="img/alcohol/rum.jpg">
-                    </div>
-                  </div>
-                </div>
-                <div class="text-container">
-                  <h3>Rum</h3>
-                  <div style="color: black;">
-                    Most of the rum is produced in the Caribbean Sea and the mouth of the Demerara River in South...
-                  </div>
+          <div class="a-box swiper-slide">
+            <div class="img-container">
+              <div class="img-inner">
+                <div class="inner-skew">
+                  <img src="img/alcohol/rum.jpg">
                 </div>
               </div>
-            </a>
-          </li>
+            </div>
+            <div class="text-container">
+              <h3>Rum</h3>
+              <div style="color: black;">
+                Most of the rum is produced in the Caribbean Sea and the mouth of the Demerara River in South
+                America. Other countries where it is produced are Australia, India and the former French colonies in
+                the Indian Ocean...
+              </div>
+            </div>
+          </div>
           <!-- Vodka -->
-          <li class="splide__slide">
-            <a href="alcohol.html#vodka">
-              <div class="a-box splide__slide__container">
-                <div class="img-container">
-                  <div class="img-inner">
-                    <div class="inner-skew">
-                      <img src="img/alcohol/vodka.jpg">
-                    </div>
-                  </div>
-                </div>
-                <div class="text-container">
-                  <h3>Vodka</h3>
-                  <div style="color: black;">
-                    Vodka is a clear distilled alcoholic beverage. Different varieties originated in Poland, Russia,
-                    and...
-                  </div>
+          <div class="a-box swiper-slide">
+            <div class="img-container">
+              <div class="img-inner">
+                <div class="inner-skew">
+                  <img src="img/alcohol/vodka.jpg">
                 </div>
               </div>
-            </a>
-          </li>
+            </div>
+            <div class="text-container">
+              <h3>Vodka</h3>
+              <div style="color: black;">
+                Vodka is a clear distilled alcoholic beverage. Different varieties originated in Poland, Russia, and
+                Sweden. Vodka is composed mainly of water and ethanol but sometimes with traces of impurities and
+                flavourings...
+              </div>
+            </div>
+          </div>
           <!-- Whiskey -->
-          <li class="splide__slide">
-            <a href="alcohol.html#whiskey">
-              <div class="a-box splide__slide__container">
-                <div class="img-container">
-                  <div class="img-inner">
-                    <div class="inner-skew">
-                      <img src="img/alcohol/whiskey.jpg">
-                    </div>
-                  </div>
-                </div>
-                <div class="text-container">
-                  <h3>Whiskey</h3>
-                  <div style="color: black;">
-                    Whiskey is a common distilled spirit, produced by the still fermentation of grains and the...
-                  </div>
+          <div class="a-box swiper-slide">
+            <div class="img-container">
+              <div class="img-inner">
+                <div class="inner-skew">
+                  <img src="img/alcohol/whiskey.jpg">
                 </div>
               </div>
-            </a>
-          </li>
+            </div>
+            <div class="text-container">
+              <h3>Whiskey</h3>
+              <div style="color: black;">
+                Whiskey is a common distilled spirit, produced by the still fermentation of grains and the
+                distillation of the fermentation liquid. The product of the distillation, which is commonly called
+                in English New-Make, is aged in oak barrels, usually charred on the inside...
+              </div>
+            </div>
+          </div>
           <!-- Brandy -->
-          <li class="splide__slide">
-            <a href="alcohol.html#brandy">
-              <div class="a-box splide__slide__container">
-                <div class="img-container">
-                  <div class="img-inner">
-                    <div class="inner-skew">
-                      <img src="img/alcohol/brandy.jpg">
-                    </div>
-                  </div>
-                </div>
-                <div class="text-container">
-                  <h3>Brandy</h3>
-                  <div style="color: black;">
-                    Brandy is a liquor produced by distilling wine. Brandy generally contains 35–60% alcohol by
-                    volume...
-                  </div>
+          <div class="a-box swiper-slide">
+            <div class="img-container">
+              <div class="img-inner">
+                <div class="inner-skew">
+                  <img src="img/alcohol/brandy.jpg">
                 </div>
               </div>
-            </a>
-          </li>
+            </div>
+            <div class="text-container">
+              <h3>Brandy</h3>
+              <div style="color: black;">
+                Brandy is a liquor produced by distilling wine. Brandy generally contains 35–60% alcohol by volume
+                and is typically consumed as an after-dinner digestif. Some brandies are aged in wooden casks...
+              </div>
+            </div>
+          </div>
           <!-- Cognac -->
-          <li class="splide__slide">
-            <a href="alcohol.html#cognac">
-              <div class="a-box splide__slide__container">
-                <div class="img-container">
-                  <div class="img-inner">
-                    <div class="inner-skew">
-                      <img src="img/alcohol/cognac.jpg">
-                    </div>
-                  </div>
-                </div>
-                <div class="text-container">
-                  <h3>Cognac</h3>
-                  <div style="color: black;">
-                    Cognac is a variety of brandy named after the commune of Cognac, France. It is produced in the...
-                  </div>
+          <div class="a-box swiper-slide">
+            <div class="img-container">
+              <div class="img-inner">
+                <div class="inner-skew">
+                  <img src="img/alcohol/cognac.jpg">
                 </div>
               </div>
-            </a>
-          </li>
+            </div>
+            <div class="text-container">
+              <h3>Cognac</h3>
+              <div style="color: black;">
+                Cognac is a variety of brandy named after the commune of Cognac, France. It is produced in the
+                surrounding wine-growing region in the departments of Charente and Charente-Maritime...
+              </div>
+            </div>
+          </div>
           <!-- Aperol -->
-          <li class="splide__slide">
-            <a href="alcohol.html#aperol">
-              <div class="a-box splide__slide__container">
-                <div class="img-container">
-                  <div class="img-inner">
-                    <div class="inner-skew">
-                      <img src="img/alcohol/aperol.jpg">
-                    </div>
-                  </div>
-                </div>
-                <div class="text-container">
-                  <h3>Aperol</h3>
-                  <div style="color: black;">
-                    Aperol is an Italian bitter apéritif made of gentian, rhubarb and cinchona, among other
-                    ingredients...
-                  </div>
+          <div class="a-box swiper-slide">
+            <div class="img-container">
+              <div class="img-inner">
+                <div class="inner-skew">
+                  <img src="img/alcohol/aperol.jpg">
                 </div>
               </div>
-            </a>
-          </li>
+            </div>
+            <div class="text-container">
+              <h3>Aperol</h3>
+              <div style="color: black;">
+                Aperol is an Italian bitter apéritif made of gentian, rhubarb and cinchona, among other ingredients.
+                It has a vibrant orange hue. Its name comes from apero, an Italian slang word for apéritif...
+              </div>
+            </div>
+          </div>
           <!-- Campari -->
-          <li class="splide__slide">
-            <a href="alcohol.html#campari">
-              <div class="a-box splide__slide__container">
-                <div class="img-container">
-                  <div class="img-inner">
-                    <div class="inner-skew">
-                      <img src="img/alcohol/campari.jpg">
-                    </div>
-                  </div>
-                </div>
-                <div class="text-container">
-                  <h3>Campari</h3>
-                  <div style="color: black;">
-                    Campari has been produced in Milan since 1862, the year in which it was first prepared by Gaspera...
-                  </div>
+          <div class="a-box swiper-slide">
+            <div class="img-container">
+              <div class="img-inner">
+                <div class="inner-skew">
+                  <img src="img/alcohol/campari.jpg">
                 </div>
               </div>
-            </a>
-          </li>
+            </div>
+            <div class="text-container">
+              <h3>Campari</h3>
+              <div style="color: black;">
+                Campari has been produced in Milan since 1862, the year in which it was first prepared by Gaspera
+                Campari, the owner of the cafe "Caffe Camprino" in the city. The exact recipe for making the liqueur
+                has never changed and is a family secret of the Campari family...
+              </div>
+            </div>
+          </div>
           <!-- Arak -->
-          <li class="splide__slide">
-            <a href="alcohol.html#arak">
-              <div class="a-box splide__slide__container">
-                <div class="img-container">
-                  <div class="img-inner">
-                    <div class="inner-skew">
-                      <img src="img/alcohol/arak.jpg">
-                    </div>
-                  </div>
-                </div>
-                <div class="text-container">
-                  <h3>Arak</h3>
-                  <div style="color: black;">
-                    For the East Asian liquor, sometimes also spelt "arak", see arrack. For the date-liquor distilled...
-                  </div>
+          <div class="a-box swiper-slide">
+            <div class="img-container">
+              <div class="img-inner">
+                <div class="inner-skew">
+                  <img src="img/alcohol/arak.jpg">
                 </div>
               </div>
-            </a>
-          </li>
+            </div>
+            <div class="text-container">
+              <h3>Arak</h3>
+              <div style="color: black;">
+                For the East Asian liquor, sometimes also spelt "arak", see arrack. For the date-liquor distilled
+                illegally in Sudan, see Araqi. Arak or araq is a distilled Levantine spirit of the anise drinks
+                family. It is translucent and unsweetened...
+              </div>
+            </div>
+          </div>
           <!-- Ouzo -->
-          <li class="splide__slide">
-            <a href="alcohol.html#ouzo">
-              <div class="a-box splide__slide__container">
-                <div class="img-container">
-                  <div class="img-inner">
-                    <div class="inner-skew">
-                      <img src="img/alcohol/ouzo.jpg">
-                    </div>
-                  </div>
-                </div>
-                <div class="text-container">
-                  <h3>Ouzo</h3>
-                  <div style="color: black;">
-                    Ouzo is a dry anise-flavored aperitif that is widely consumed in Greece. It is made from
-                    rectified...
-                  </div>
+          <div class="a-box swiper-slide">
+            <div class="img-container">
+              <div class="img-inner">
+                <div class="inner-skew">
+                  <img src="img/alcohol/ouzo.jpg">
                 </div>
               </div>
-            </a>
-          </li>
-        </ul>
+            </div>
+            <div class="text-container">
+              <h3>Ouzo</h3>
+              <div style="color: black;">
+                Ouzo is a dry anise-flavored aperitif that is widely consumed in Greece. It is made from rectified
+                spirits that have undergone a process of distillation and flavoring. Its taste is similar to other
+                anise liquors like pastis, sambuca, raki and arak...
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
       </div>
     </section>
     <section class="products-section">
       <div class="container">
-        <div class="products-hp" data-aos="fade-left" data-aos-offset="300">
+        <div class="products-hp" data-aos="fade-right" data-aos-offset="300">
           <div class="prod-hp-txt">
             <p3>
               We offer various products of the highest quality for making cocktails which are available for purchase on
@@ -321,7 +295,7 @@
     </section>
     <section class="course-section">
       <div class="container">
-        <div class="course-hp" data-aos="fade-right" data-aos-offset="300">
+        <div class="course-hp" data-aos="fade-left" data-aos-offset="300">
           <div class="course-hp-img">
             <img class="course-image" src="img/index/rsz_1pexels-studio-naae-13439100.jpg">
           </div>
