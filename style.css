@@ -367,7 +367,12 @@ h3 {
 .prod-desc {
     width: 50%;
     margin: auto;
-    padding: 5px;
+    padding: 10px;
+}
+
+.prod-desc-txt {
+    font-size: 12px;
+    text-align: left;
 }
 
 .prod-btn {
@@ -384,7 +389,7 @@ h3 {
 }
 
 .prod-title {
-    font-size: 17px;
+    font-size: 20px;
 }
 
 h {
