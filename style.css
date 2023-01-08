@@ -305,6 +305,7 @@ h3 {
     border: 1px;
     font-weight: bold;
     font-size: 18px;
+    margin-top: 20px;
 }
 
 .course-hp {
@@ -369,9 +370,12 @@ h {
     font-size: 26px;
 }
 
-p {
+.prod-hp-txt {
     font-size: 18px;
-    /* margin: unset; */
+}
+
+.p3 {
+    font-size: 18px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -391,7 +395,7 @@ p {
         font-size: 24px;
     }
 
-    p {
+    .prod-hp-txt {
         font-size: 16px;
     }
 
@@ -401,6 +405,10 @@ p {
 
     .text-container h3 {
         font-size: 20px;
+    }
+
+    .p3 {
+        font-size: 16px;
     }
 }
 
@@ -421,7 +429,7 @@ p {
         font-size: 22px;
     }
 
-    p {
+    .prod-hp-txt {
         font-size: 14px;
     }
 
@@ -431,6 +439,10 @@ p {
 
     .text-container h3 {
         font-size: 18px;
+    }
+
+    .p3 {
+        font-size: 14px;
     }
 }
 
