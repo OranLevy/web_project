@@ -126,3 +126,23 @@ function validateForm() {
     alert("Your details have been sent successfully!");
     return true;
 }
+
+function switchColor(id) {
+    let val = document.getElementById(id).innerHTML;
+    if (val == "Select") {
+        document.getElementById(id).innerHTML = 'Unselect';
+        document.getElementById(id).style.backgroundColor = '#eee';
+        document.getElementById(id).style.border = '#eee';
+        document.getElementById(id).style.color = 'black';
+    }
+    if (val == "Unselect") {
+        document.getElementById(id).innerHTML = 'Select';
+        document.getElementById(id).style.backgroundColor = '#282828';
+        document.getElementById(id).style.border = '#282828';
+        document.getElementById(id).style.color = 'white';
+    }
+}
+
+function makeOrder() {
+    alert("Your order has been sent successfully!");
+}
