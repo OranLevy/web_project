@@ -79,10 +79,6 @@ main {
     .course-image {
         width: 100%;
     }
-
-    .prod-card {
-        flex-direction: column;
-    }
 }
 
 .menu-item {
@@ -354,7 +350,7 @@ h3 {
 
 .prod-card {
     display: flex;
-    flex-direction: row-reverse;
+    flex-wrap: wrap;
     width: 100%;
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 25%);
     border-radius: 10px;
@@ -362,36 +358,10 @@ h3 {
     background-color: white;
 }
 
-.prod-img {
-    border-radius: 10px;
-    margin: auto;
-    padding: 15px;
-    width: 40%;
-}
-
-.prod-img img {
-    width: 100%;
-}
-
 .prod-desc {
     width: 60%;
     padding-top: 20px;
-}
-
-.prod-desc-txt {
-    font-size: 16px;
-    text-align: left;
-    padding: 20px;
-    padding-top: unset;
-    margin-bottom: unset;
-}
-
-.prod-price {
-    font-size: 16px;
-    padding-left: 20px;
-    padding-top: 10px;
-    text-align: left;
-    font-weight: bold;
+    height: 300px;
 }
 
 .prod-title {
@@ -399,8 +369,37 @@ h3 {
     color: #282828;
     text-align: left;
     padding-left: 20px;
-    margin-bottom: unset;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.prod-desc-txt {
+    font-size: 16px;
+    text-align: left;
+    padding-left: 20px;
+    margin: unset;
+    margin-bottom: 10px;
+}
+
+.prod-price {
+    font-size: 18px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.prod-img {
+    border-radius: 10px;
+    margin: auto;
+    padding: 20px;
+    width: 40%;
+}
+
+.prod-img img {
+    width: 100%;
+}
+
+.button-div {
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .select-button {
@@ -413,7 +412,6 @@ h3 {
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 25%);
     border: solid 1px #282828;
     font-size: 16px;
-    margin-bottom: 20px;
 }
 
 h {
@@ -508,26 +506,21 @@ p3 {
     }
 
     .prod-card {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .prod-desc {
         width: unset;
+        padding-right: 20px;
+        height: 235px;
     }
 
     .prod-title {
         text-align: center;
     }
 
-    .prod-price {
-        text-align: center;
-    }
-
-    .prod-desc-txt {
-        text-align: center;
-    }
-
     .prod-img {
+        width: unset;
         width: 50%;
     }
 }
