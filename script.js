@@ -65,6 +65,9 @@ $(document).ready(function () {
         slidesPerView: 'auto',
         spaceBetween: 150,
         centeredSlides: true,
+        simulateTouch: true,
+        touchEventsTarget: true,
+        touchReleaseOnEdges: true,
         autoplay: {
             delay: 4000,
             disableOnInteraction: false,
@@ -118,6 +121,7 @@ function validateForm() {
         alert("You have entered an invalid email address");
         return false;
     }
+
     let course = document.getElementById('course-dropdown').value;
     if (course === "Select") {
         alert("Please select a course");
