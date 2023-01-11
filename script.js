@@ -1,5 +1,5 @@
 function openHamburger() {
-    if ($('.hamburger-menu').css('display') == 'none') {
+    if ($('.hamburger-menu').css('display') === 'none') {
         $('.hamburger-menu').show();
     } else {
         $('.hamburger-menu').hide();
@@ -135,7 +135,7 @@ function switchColor(id) {
         document.getElementById(id).style.border = '#eee';
         document.getElementById(id).style.color = 'black';
     }
-    if (val == "Unselect") {
+    if (val === "Unselect") {
         document.getElementById(id).innerHTML = 'Select';
         document.getElementById(id).style.backgroundColor = '#282828';
         document.getElementById(id).style.border = '#282828';
@@ -145,9 +145,10 @@ function switchColor(id) {
 
 function makeOrder() {
     let counter = 0;
-    for (let i = 1; i <= 18; i++) {
+    let numOfCards = document.getElementsByClassName('prod-card').length;
+    for (let i = 1; i <= numOfCards; i++) {
         let val = document.getElementById(i).innerHTML;
-        if (val == "Unselect") {
+        if (val === "Unselect") {
             counter++;
             document.getElementById(i).innerHTML = 'Select';
             document.getElementById(i).style.backgroundColor = '#282828';
@@ -155,10 +156,10 @@ function makeOrder() {
             document.getElementById(i).style.color = 'white';
         }
     }
-    if (counter == 0) {
+    if (counter === 0) {
         alert("No product selected");
     }
-    else if (counter == 1) {
+    else if (counter === 1) {
         alert("Your order has been accepted! (" + counter + " product total)");
     } else {
         alert("Your order has been accepted! (" + counter + " products total)");

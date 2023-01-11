@@ -347,7 +347,7 @@ h3 {
     margin: auto;
     padding: 20px;
     gap: 20px;
-    align-content: center;
+    align-items: center;
 }
 
 .course-section {
