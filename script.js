@@ -11,7 +11,7 @@ function getProducts() {
     request.onreadystatechange = function () {
         if (request.readyState === 4 && request.status === 200) {
             console.log(request);
-            let data = JSON.parse(request.responseText)
+            let data = JSON.parse(request.responseText);
             console.log(data);
             let imgElems = document.querySelectorAll('.prod-img img');
             let titleElems = document.getElementsByClassName('prod-title');

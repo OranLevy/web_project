@@ -24,15 +24,6 @@
             }
             return $result;
         }
-
-        public function id_exist_answers($id){
-            $result = $this->query("SELECT user_id FROM survey_part1 WHERE user_id = '" . $id . "'")->fetch_all();
-            if(count($result) > 0){
-                return true;
-            }else{
-                return false;
-            }
-        }
     } 
 
     $database = new Database();
