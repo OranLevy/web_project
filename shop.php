@@ -1,11 +1,11 @@
 <?php
 require_once('includes/init.php');
 global $database;
-if($database->get_connection()){
-    echo "<script>console.log('Connection OK');</script>";
-}else{
-    die('Connection failed');
-}
+//if($database->get_connection()){
+//    echo "<script>console.log('Connection OK');</script>";
+//}else{
+//    die('Connection failed');
+//}
 $products = Product::fetch_products();
 //var_dump($products);
 $response = Array();
