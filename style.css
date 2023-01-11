@@ -969,6 +969,10 @@ p1 {
     text-decoration: none;
 }
 
+[class^="ri-"], [class*=" ri-"] {
+    margin-right: 5px;
+}
+
 .form-container {
     display: flex;
     gap: 10px;
