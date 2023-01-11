@@ -354,13 +354,18 @@ h3 {
     background: #edebeb;
 }
 
+.vid {
+    text-align: center;
+    background-color: black;
+}
+
 video {
     width: 50%;
 }
 
 @media screen and (max-width: 1000px) {
     video {
-        width: 70%;
+        width: 80%;
     }
 }
 
@@ -1072,6 +1077,7 @@ a:link {
 iframe {
     width: 50%;
     height: 350px;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 25%);
 }
 
 @media screen and (max-width: 1000px) {
