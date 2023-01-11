@@ -15,4 +15,5 @@ foreach ($products as $prod){
 }
 var_dump($response);
 $response = json_encode($response);
+var_dump($response);
 print_r($response);
