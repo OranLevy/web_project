@@ -19,6 +19,10 @@ main {
     flex-direction: row;
 }
 
+a:hover {
+    color: #a2a2a2 !important;
+}
+
 .nav-bar-mobile {
     height: 68px;
     width: 100%;
