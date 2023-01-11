@@ -83,7 +83,7 @@ AOS.init({
 
 function validateForm() {
     let firstname = document.forms["myForm"]["firstname"].value;
-    if (firstname == "") {
+    if (firstname === "") {
         alert("First name must be filled out");
         return false;
     }
@@ -92,7 +92,7 @@ function validateForm() {
         return false;
     }
     let lastname = document.forms["myForm"]["lastname"].value;
-    if (lastname == "") {
+    if (lastname === "") {
         alert("Last name must be filled out");
         return false;
     }
@@ -101,7 +101,7 @@ function validateForm() {
         return false;
     }
     let phone = document.forms["myForm"]["phone"].value;
-    if (phone == "") {
+    if (phone === "") {
         alert("Phone number must be filled out");
         return false;
     }
@@ -110,7 +110,7 @@ function validateForm() {
         return false;
     }
     let email = document.forms["myForm"]["email"].value;
-    if (email == "") {
+    if (email === "") {
         alert("Email address must be filled out");
         return false;
     }
@@ -119,7 +119,7 @@ function validateForm() {
         return false;
     }
     let course = document.getElementById('course-dropdown').value;
-    if (course == "Select") {
+    if (course === "Select") {
         alert("Please select a course");
         return false;
     }
@@ -129,7 +129,7 @@ function validateForm() {
 
 function switchColor(id) {
     let val = document.getElementById(id).innerHTML;
-    if (val == "Select") {
+    if (val === "Select") {
         document.getElementById(id).innerHTML = 'Unselect';
         document.getElementById(id).style.backgroundColor = '#eee';
         document.getElementById(id).style.border = '#eee';
