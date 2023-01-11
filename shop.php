@@ -7,6 +7,7 @@ if($database->get_connection()){
     die('Connection failed');
 }
 $products = Product::fetch_products();
+var_dump($products);
 $response = Array();
 foreach ($products as $prod){
 //    var_dump($prod);
