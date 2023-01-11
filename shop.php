@@ -11,7 +11,7 @@ $products = Product::fetch_products();
 $response = Array();
 foreach ($products as $prod){
 //    var_dump($prod);
-    $response[] = array('id' => $prod->id, 'name' => $prod->name, 'price' => $prod->price, 'description' => $prod->description, 'image' => $prod->image);
+    $response[] = array('id' => utf8_encode($prod->id), 'name' => utf8_encode($prod->name), 'price' => utf8_encode($prod->price), 'description' => utf8_encode($prod->description), 'image' => utf8_encode($prod->image));
 }
 var_dump($response);
 $response = json_encode($response);
