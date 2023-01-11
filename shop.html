@@ -12,19 +12,19 @@
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <title>weCocktail</title>
 </head>
 
-<body>
+<body style="background-color: #eee;">
   <header class="header">
     <nav class="nav-bar-desktop">
       <div id="logo"><a class="img-logo" href="index.html"><img src="img/index/New Icon.png" style="width: 55px;"></a>
       </div>
       <div><a class="menu-item" href="index.html">Home</a></div>
       <div><a class="menu-item" href="alcohol.html">Alcohol</a></div>
-      <div><a class="menu-item" href="cocktails.html">Coktails</a></div>
+      <div><a class="menu-item" href="cocktails.html">Cocktails</a></div>
       <div><a class="menu-item" href="shop.html">Shop</a></div>
       <div><a class="menu-item" href="courses.html">Courses</a></div>
     </nav>
@@ -44,229 +44,320 @@
       </ul>
     </div>
     <div class="hero-image">
-      <img src="img/shop/hero.jpg" style="height: 378px;">
+      <img src="img/shop/hero.jpg">
     </div>
   </header>
 
   <main>
+    <section data-aos="fade-up" style="padding-top: 20px;">
+      <div><img class="icon" src="img/shop/shaker-icon-16.jpg" alt="icon"></div>
+      <div class="alcohol_type">Our Products</div>
+    </section>
+
     <div id="error"></div>
     <section class="products container">
-      <div class="prod-card">
+      <div class="prod-card" data-aos="fade-right">
+        <div class="prod-desc">
+          <div>
+            <h4 class="prod-title"></h4>
+            <p class="prod-desc-txt"></p>
+            <p style="float: left; padding-left: 20px; font-size: 18px;">Price:&nbsp;</p>
+            <p class="prod-price"></p>
+            <p style="clear: left;"></p>
+          </div>
+        </div>
         <div class="prod-img">
           <img>
         </div>
-        <div class="prod-desc">
-          <h4 class="prod-title"></h4>
-          <p class="prod-price"></p>
-          <p class="prod-desc-txt">
-          </p>
+        <div class="button-div">
+          <button class="select-button" id="1" onclick="switchColor(id)">Select</button>
         </div>
       </div>
-      <div class="prod-card">
+      </div>
+      <div class="prod-card" data-aos="fade-left">
+        <div class="prod-desc">
+          <div>
+            <h4 class="prod-title"></h4>
+            <p class="prod-desc-txt"></p>
+            <p style="float: left; padding-left: 20px; font-size: 18px;">Price:&nbsp;</p>
+            <p class="prod-price"></p>
+            <p style="clear: left;"></p>
+          </div>
+        </div>
         <div class="prod-img">
           <img>
         </div>
-        <div class="prod-desc">
-          <h4 class="prod-title"></h4>
-          <p class="prod-price"></p>
-          <p class="prod-desc-txt">
-          </p>
+        <div class="button-div">
+          <button class="select-button" id="2" onclick="switchColor(id)">Select</button>
         </div>
       </div>
-      <div class="prod-card">
+      </div>
+    </section>
+
+    <section class="products container">
+      <div class="prod-card" data-aos="fade-right">
+        <div class="prod-desc">
+          <div>
+            <h4 class="prod-title"></h4>
+            <p class="prod-desc-txt"></p>
+            <p style="float: left; padding-left: 20px; font-size: 18px;">Price:&nbsp;</p>
+            <p class="prod-price"></p>
+            <p style="clear: left;"></p>
+          </div>
+        </div>
         <div class="prod-img">
           <img>
         </div>
+        <div class="button-div">
+          <button class="select-button" id="3" onclick="switchColor(id)">Select</button>
+        </div>
+      </div>
+      </div>
+      <div class="prod-card" data-aos="fade-left">
         <div class="prod-desc">
-          <h4 class="prod-title"></h4>
+          <div>
+            <h4 class="prod-title"></h4>
+            <p class="prod-desc-txt"></p>
+            <p style="float: left; padding-left: 20px; font-size: 18px;">Price:&nbsp;</p>
+            <p class="prod-price"></p>
+            <p style="clear: left;"></p>
+          </div>
+        </div>
+        <div class="prod-img">
+          <img>
+        </div>
+        <div class="button-div">
+          <button class="select-button" id="4" onclick="switchColor(id)">Select</button>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="products container">
+      <div class="prod-card" data-aos="fade-right">
+        <div class="prod-desc">
+          <div>
+            <h4 class="prod-title"></h4>
+            <p class="prod-desc-txt"></p>
+            <p style="float: left; padding-left: 20px; font-size: 18px;">Price:&nbsp;</p>
+            <p class="prod-price"></p>
+            <p style="clear: left;"></p>
+          </div>
+        </div>
+        <div class="prod-img">
+          <img>
+        </div>
+        <div class="button-div">
+          <button class="select-button" id="5" onclick="switchColor(id)">Select</button>
+        </div>
+      </div>
+      </div>
+      <div class="prod-card" data-aos="fade-left">
+        <div class="prod-desc">
+          <div>
+            <h4 class="prod-title"></h4>
+            <p class="prod-desc-txt"></p>
+            <p style="float: left; padding-left: 20px; font-size: 18px;">Price:&nbsp;</p>
+            <p class="prod-price"></p>
+            <p style="clear: left;"></p>
+          </div>
+        </div>
+        <div class="prod-img">
+          <img>
+        </div>
+        <div class="button-div">
+          <button class="select-button" id="6" onclick="switchColor(id)">Select</button>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="products container">
+      <div class="prod-card" data-aos="fade-right">
+        <div class="prod-desc">
+          <h4 class="prod-title">Product</h4>
+          <p class="prod-desc-txt"></p>
+          <p style="float: left; padding-left: 20px; font-size: 18px;">Price:&nbsp;</p>
           <p class="prod-price"></p>
-          <p class="prod-desc-txt">
-          </p>
+        </div>
+        <div class="prod-img">
+          <img>
+        </div>
+        <div class="button-div">
+          <button class="select-button" id="7" onclick="switchColor(id)">Select</button>
+        </div>
+      </div>
+      <div class="prod-card" data-aos="fade-left">
+        <div class="prod-desc">
+          <div>
+            <h4 class="prod-title"></h4>
+            <p class="prod-desc-txt"></p>
+            <p style="float: left; padding-left: 20px; font-size: 18px;">Price:&nbsp;</p>
+            <p class="prod-price"></p>
+            <p style="clear: left;"></p>
+          </div>
+        </div>
+        <div class="prod-img">
+          <img>
+        </div>
+        <div class="button-div">
+          <button class="select-button" id="8" onclick="switchColor(id)">Select</button>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="products container">
+      <div class="prod-card" data-aos="fade-right">
+        <div class="prod-desc">
+          <div>
+            <h4 class="prod-title"></h4>
+            <p class="prod-desc-txt"></p>
+            <p style="float: left; padding-left: 20px; font-size: 18px;">Price:&nbsp;</p>
+            <p class="prod-price"></p>
+            <p style="clear: left;"></p>
+          </div>
+        </div>
+        <div class="prod-img">
+          <img>
+        </div>
+        <div class="button-div">
+          <button class="select-button" id="9" onclick="switchColor(id)">Select</button>
+        </div>
+      </div>
+      </div>
+      <div class="prod-card" data-aos="fade-left">
+        <div class="prod-desc">
+          <div>
+            <h4 class="prod-title"></h4>
+            <p class="prod-desc-txt"></p>
+            <p style="float: left; padding-left: 20px; font-size: 18px;">Price:&nbsp;</p>
+            <p class="prod-price"></p>
+            <p style="clear: left;"></p>
+          </div>
+        </div>
+        <div class="prod-img">
+          <img>
+        </div>
+        <div class="button-div">
+          <button class="select-button" id="10" onclick="switchColor(id)">Select</button>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="products container">
+      <div class="prod-card" data-aos="fade-right">
+        <div class="prod-desc">
+          <div>
+            <h4 class="prod-title"></h4>
+            <p class="prod-desc-txt"></p>
+            <p style="float: left; padding-left: 20px; font-size: 18px;">Price:&nbsp;</p>
+            <p class="prod-price"></p>
+            <p style="clear: left;"></p>
+          </div>
+        </div>
+        <div class="prod-img">
+          <img>
+        </div>
+        <div class="button-div">
+          <button class="select-button" id="11" onclick="switchColor(id)">Select</button>
+        </div>
+      </div>
+      </div>
+      <div class="prod-card" data-aos="fade-left">
+        <div class="prod-desc">
+          <div>
+            <h4 class="prod-title"></h4>
+            <p class="prod-desc-txt"></p>
+            <p style="float: left; padding-left: 20px; font-size: 18px;">Price:&nbsp;</p>
+            <p class="prod-price"></p>
+            <p style="clear: left;"></p>
+          </div>
+        </div>
+        <div class="prod-img">
+          <img>
+        </div>
+        <div class="button-div">
+          <button class="select-button" id="12" onclick="switchColor(id)">Select</button>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="products container">
+      <div class="prod-card" data-aos="fade-right">
+        <div class="prod-desc">
+          <div>
+            <h4 class="prod-title"></h4>
+            <p class="prod-desc-txt"></p>
+            <p style="float: left; padding-left: 20px; font-size: 18px;">Price:&nbsp;</p>
+            <p class="prod-price"></p>
+            <p style="clear: left;"></p>
+          </div>
+        </div>
+        <div class="prod-img">
+          <img>
+        </div>
+        <div class="button-div">
+          <button class="select-button" id="13" onclick="switchColor(id)">Select</button>
+        </div>
+      </div>
+      </div>
+      <div class="prod-card" data-aos="fade-left">
+        <div class="prod-desc">
+          <h4 class="prod-title">Product</h4>
+          <p class="prod-desc-txt"></p>
+          <p style="float: left; padding-left: 20px; font-size: 18px;">Price:&nbsp;</p>
+          <p class="prod-price"></p>
+        </div>
+        <div class="prod-img">
+          <img>
+        </div>
+        <div class="button-div">
+          <button class="select-button" id="14" onclick="switchColor(id)">Select</button>
         </div>
       </div>
     </section>
+
     <section class="products container">
-      <div class="prod-card">
+      <div class="prod-card" data-aos="fade-right">
+        <div class="prod-desc">
+          <h4 class="prod-title">Product</h4>
+          <p class="prod-desc-txt"></p>
+          <p style="float: left; padding-left: 20px; font-size: 18px;">Price:&nbsp;</p>
+          <p class="prod-price"></p>
+        </div>
         <div class="prod-img">
           <img>
         </div>
-        <div class="prod-desc">
-          <h4 class="prod-title"></h4>
-          <p class="prod-price"></p>
-          <p class="prod-desc-txt">
-          </p>
+        <div class="button-div">
+          <button class="select-button" id="15" onclick="switchColor(id)">Select</button>
         </div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card" data-aos="fade-left">
+        <div class="prod-desc">
+          <h4 class="prod-title">Product</h4>
+          <p class="prod-desc-txt"></p>
+          <p style="float: left; padding-left: 20px; font-size: 18px;">Price:&nbsp;</p>
+          <p class="prod-price"></p>
+        </div>
         <div class="prod-img">
           <img>
         </div>
-        <div class="prod-desc">
-          <h4 class="prod-title"></h4>
-          <p class="prod-price"></p>
-          <p class="prod-desc-txt">
-          </p>
-        </div>
-      </div>
-      <div class="prod-card">
-        <div class="prod-img">
-          <img>
-        </div>
-        <div class="prod-desc">
-          <h4 class="prod-title"></h4>
-          <p class="prod-price"></p>
-          <p class="prod-desc-txt">
-          </p>
+        <div class="button-div">
+          <button class="select-button" id="16" onclick="switchColor(id)">Select</button>
         </div>
       </div>
     </section>
-    <section class="products container">
-      <div class="prod-card">
-        <div class="prod-img">
-          <img>
-        </div>
-        <div class="prod-desc">
-          <h4 class="prod-title">Product</h4>
-          <p class="prod-price"></p>
-          <p class="prod-desc-txt">
-            Lorem ipsum dolor sit amet consectetur
-          </p>
-        </div>
-      </div>
-      <div class="prod-card">
-        <div class="prod-img">
-          <img>
-        </div>
-        <div class="prod-desc">
-          <h4 class="prod-title"></h4>
-          <p class="prod-price"></p>
-          <p class="prod-desc-txt">
-          </p>
-        </div>
-      </div>
-      <div class="prod-card">
-        <div class="prod-img">
-          <img>
-        </div>
-        <div class="prod-desc">
-          <h4 class="prod-title"></h4>
-          <p class="prod-price"></p>
-          <p class="prod-desc-txt">
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="products container">
-      <div class="prod-card">
-        <div class="prod-img">
-          <img>
-        </div>
-        <div class="prod-desc">
-          <h4 class="prod-title"></h4>
-          <p class="prod-price"></p>
-          <p class="prod-desc-txt">
-          </p>
-        </div>
-      </div>
-      <div class="prod-card">
-        <div class="prod-img">
-          <img>
-        </div>
-        <div class="prod-desc">
-          <h4 class="prod-title"></h4>
-          <p class="prod-price"></p>
-          <p class="prod-desc-txt">
-          </p>
-        </div>
-      </div>
-      <div class="prod-card">
-        <div class="prod-img">
-          <img>
-        </div>
-        <div class="prod-desc">
-          <h4 class="prod-title"></h4>
-          <p class="prod-price"></p>
-          <p class="prod-desc-txt">
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="products container">
-      <div class="prod-card">
-        <div class="prod-img">
-          <img>
-        </div>
-        <div class="prod-desc">
-          <h4 class="prod-title"></h4>
-          <p class="prod-price"></p>
-          <p class="prod-desc-txt">
-          </p>
-        </div>
-      </div>
-      <div class="prod-card">
-        <div class="prod-img">
-          <img>
-        </div>
-        <div class="prod-desc">
-          <h4 class="prod-title">Product</h4>
-          <p class="prod-price"></p>
-          <p class="prod-desc-txt">
-            Lorem ipsum dolor sit amet consectetur
-          </p>
-        </div>
-      </div>
-      <div class="prod-card">
-        <div class="prod-img">
-          <img>
-        </div>
-        <div class="prod-desc">
-          <h4 class="prod-title">Product</h4>
-          <p class="prod-price"></p>
-          <p class="prod-desc-txt">
-            Lorem ipsum dolor sit amet consectetur
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="products container">
-      <div class="prod-card">
-        <div class="prod-img">
-          <img>
-        </div>
-        <div class="prod-desc">
-          <h4 class="prod-title">Product</h4>
-          <p class="prod-price"></p>
-          <p class="prod-desc-txt">
-            Lorem ipsum dolor sit amet consectetur
-          </p>
-        </div>
-      </div>
-      <div class="prod-card">
-        <div class="prod-img">
-          <img>
-        </div>
-        <div class="prod-desc">
-          <h4 class="prod-title">Product</h4>
-          <p class="prod-price"></p>
-          <p class="prod-desc-txt">
-            Lorem ipsum dolor sit amet consectetur
-          </p>
-        </div>
-      </div>
-      <div class="prod-card">
-        <div class="prod-img">
-          <img>
-        </div>
-        <div class="prod-desc">
-          <h4 class="prod-title">Product</h4>
-          <p class="prod-price"></p>
-          <p class="prod-desc-txt">
-            Lorem ipsum dolor sit amet consectetur
-          </p>
-        </div>
+
+    <section>
+      <div style="text-align: center; margin: 30px;">
+        <button class="order-button" onclick="return makeOrder()">Order</button>
       </div>
     </section>
   </main>
+
   <footer class="text-center text-lg-start text-white" style="background-color: #282828">
     <!-- Grid container -->
     <div class="container p-4 pb-0">
@@ -308,8 +399,9 @@
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
             <p><i class="footer-icon ri-map-pin-2-line"></i>Academic College Tel Aviv - Yafo, IL</p>
-            <p><i class="ri-mail-line"></i> info@wecocktail.com</p>
-            <p><i class="ri-phone-line"></i> +972 501234567</p>
+            <p><i class="ri-mail-line"></i><a href="mailto:info@wecocktail.com" target="_blank;"
+                style="text-decoration: none; color:white;">info@wecocktail.com</a></p>
+            <p><i class="ri-phone-line"></i>+972 501234567</p>
           </div>
           <!-- Grid column -->
         </div>
