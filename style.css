@@ -354,6 +354,22 @@ h3 {
     background: #edebeb;
 }
 
+video {
+    width: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+    video {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    video {
+        width: 90%;
+    }
+}
+
 /* Shop */
 .products {
     display: flex;
@@ -969,7 +985,8 @@ p1 {
     text-decoration: none;
 }
 
-[class^="ri-"], [class*=" ri-"] {
+[class^="ri-"],
+[class*=" ri-"] {
     margin-right: 5px;
 }
 
@@ -1047,11 +1064,37 @@ a:link {
     border: solid #797878;
 }
 
+.map {
+    margin: auto;
+    text-align: center;
+}
+
+iframe {
+    width: 50%;
+    height: 350px;
+}
+
+@media screen and (max-width: 1000px) {
+    iframe {
+        width: 70%;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    iframe {
+        width: 90%;
+        height: 250px;
+
+    }
+}
+
 /* Alcohol */
 .alcohol_card {
     display: flex;
     margin: auto;
     background-color: white;
+    width: 75%;
 }
 
 .alcohol_img {
