@@ -354,6 +354,27 @@ h3 {
     background: #edebeb;
 }
 
+.vid {
+    text-align: center;
+    background-color: black;
+}
+
+video {
+    width: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+    video {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    video {
+        width: 90%;
+    }
+}
+
 /* Shop */
 .products {
     display: flex;
@@ -969,7 +990,8 @@ p1 {
     text-decoration: none;
 }
 
-[class^="ri-"], [class*=" ri-"] {
+[class^="ri-"],
+[class*=" ri-"] {
     margin-right: 5px;
 }
 
@@ -1045,6 +1067,32 @@ a:link {
 .send-button:hover {
     background-color: #797878;
     border: solid #797878;
+}
+
+.map {
+    margin: auto;
+    text-align: center;
+}
+
+iframe {
+    width: 50%;
+    height: 350px;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 25%);
+}
+
+@media screen and (max-width: 1000px) {
+    iframe {
+        width: 70%;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    iframe {
+        width: 90%;
+        height: 250px;
+
+    }
 }
 
 /* Alcohol */
